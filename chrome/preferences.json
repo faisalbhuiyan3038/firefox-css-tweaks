@@ -1,0 +1,161 @@
+[
+    {
+        "property": "theme.firefox_devtools.font_family",
+        "label": "Font Family",
+        "description": "Monospace font for code and DevTools interface",
+        "type": "string",
+        "defaultValue": "JetBrains Mono, Cascadia Code, Fira Code, SF Mono, Menlo, monospace",
+        "examples": [
+            "JetBrains Mono, monospace",
+            "Cascadia Code, monospace",
+            "Fira Code, monospace",
+            "SF Mono, Menlo, monospace",
+            "Monaco, Courier New, monospace"
+        ]
+    },
+    {
+        "property": "theme.firefox_devtools.font_size",
+        "label": "Font Size",
+        "description": "Base font size for DevTools interface",
+        "type": "number",
+        "defaultValue": 13,
+        "min": 10,
+        "max": 18,
+        "unit": "px"
+    },
+    {
+        "property": "theme.firefox_devtools.animation_speed",
+        "label": "Animation Speed",
+        "description": "Global animation duration multiplier",
+        "type": "select",
+        "defaultValue": "normal",
+        "options": [
+            {
+                "value": "instant",
+                "label": "Instant (No animations)",
+                "multiplier": 0.01
+            },
+            {
+                "value": "fast",
+                "label": "Fast",
+                "multiplier": 0.5
+            },
+            {
+                "value": "normal",
+                "label": "Normal",
+                "multiplier": 1.0
+            },
+            {
+                "value": "slow",
+                "label": "Slow (Dramatic)",
+                "multiplier": 1.5
+            }
+        ]
+    },
+    {
+        "property": "theme.firefox_devtools.blur_effects",
+        "label": "Backdrop Blur Effects",
+        "description": "Enable glassmorphism blur effects (may impact performance)",
+        "type": "boolean",
+        "defaultValue": true
+    },
+    {
+        "property": "theme.firefox_devtools.glow_effects",
+        "label": "Glow Effects",
+        "description": "Enable glowing shadows on interactive elements",
+        "type": "boolean",
+        "defaultValue": true
+    },
+    {
+        "property": "theme.firefox_devtools.compact_mode",
+        "label": "Compact Mode",
+        "description": "Reduce spacing for more information density",
+        "type": "boolean",
+        "defaultValue": false
+    },
+    {
+        "property": "theme.firefox_devtools.accent_color",
+        "label": "Accent Color",
+        "description": "Primary accent color for highlights and active states",
+        "type": "color",
+        "defaultValue": {
+            "dark": "#8ab4f8",
+            "light": "#1a73e8"
+        },
+        "presets": [
+            {
+                "name": "Blue (Default)",
+                "dark": "#8ab4f8",
+                "light": "#1a73e8"
+            },
+            {
+                "name": "Purple",
+                "dark": "#c792ea",
+                "light": "#7c3aed"
+            },
+            {
+                "name": "Pink",
+                "dark": "#ff7ac6",
+                "light": "#db2777"
+            },
+            {
+                "name": "Cyan",
+                "dark": "#5dd9ff",
+                "light": "#0891b2"
+            },
+            {
+                "name": "Green",
+                "dark": "#73daca",
+                "light": "#059669"
+            },
+            {
+                "name": "Orange",
+                "dark": "#ff9e64",
+                "light": "#ea580c"
+            }
+        ]
+    },
+    {
+        "property": "theme.firefox_devtools.border_radius",
+        "label": "Border Radius",
+        "description": "Roundness of UI elements",
+        "type": "select",
+        "defaultValue": "medium",
+        "options": [
+            {
+                "value": "none",
+                "label": "Sharp (No radius)",
+                "multiplier": 0
+            },
+            {
+                "value": "small",
+                "label": "Subtle",
+                "multiplier": 0.5
+            },
+            {
+                "value": "medium",
+                "label": "Medium (Default)",
+                "multiplier": 1.0
+            },
+            {
+                "value": "large",
+                "label": "Rounded",
+                "multiplier": 1.5
+            }
+        ]
+    },
+    {
+        "property": "theme.firefox_devtools.console_animations",
+        "label": "Console Message Animations",
+        "description": "Animate console messages as they appear",
+        "type": "boolean",
+        "defaultValue": true
+    },
+    {
+        "property": "theme.firefox_devtools.custom_scrollbar",
+        "label": "Custom Scrollbars",
+        "description": "Use themed scrollbars instead of system default",
+        "type": "boolean",
+        "defaultValue": true
+    }
+]

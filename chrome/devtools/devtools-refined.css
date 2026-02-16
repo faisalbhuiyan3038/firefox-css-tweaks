@@ -1,0 +1,628 @@
+/* ═══════════════════════════════════════════════════════════════
+   FIREFOX DEVTOOLS - ENHANCED THEME (REFINED)
+   Modern visuals without breaking functionality
+   ═══════════════════════════════════════════════════════════════ */
+
+:root {
+   /* ━━━ Typography ━━━ */
+   --theme-font-family: 'JetBrains Mono', 'Cascadia Code', 'Fira Code', 'SF Mono', Menlo, Monaco, monospace;
+
+   /* ━━━ Animations & Transitions ━━━ */
+   --theme-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+   --theme-timing-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+   --theme-duration-fast: 0.2s;
+   --theme-duration-normal: 0.3s;
+
+   /* ━━━ Reduced Spacing (more compact) ━━━ */
+   --theme-space-xs: 3px;
+   --theme-space-sm: 6px;
+
+   /* ━━━ Border Radius ━━━ */
+   --theme-radius-sm: 4px;
+   --theme-radius-md: 6px;
+
+   /* ━━━ Console Colors (Universal) ━━━ */
+   --console-error-glow: 0 0 16px rgba(255, 82, 120, 0.25);
+   --console-warning-glow: 0 0 16px rgba(255, 193, 7, 0.25);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DARK THEME
+   ═══════════════════════════════════════════════════════════════ */
+
+:root.theme-dark {
+   /* ━━━ Base Colors ━━━ */
+   --theme-tab-toolbar-background: #2a2a2c !important;
+   --theme-toolbar-background: #323234 !important;
+   --theme-selection-color: #ffffff !important;
+   --theme-splitter-color: rgba(0, 0, 0, 0.25) !important;
+   --theme-comment: #7f8c98 !important;
+
+   --test-theme-body-background: #1e1e20 !important;
+   --theme-sidebar-background: #252527 !important;
+
+   --theme-body-color: #cdcdcd !important;
+   --theme-body-color-alt: #e0e0e0 !important;
+   --theme-content-color1: #f0f0f0 !important;
+   --theme-content-color2: #cdcdcd !important;
+   --theme-content-color3: #969696 !important;
+
+   /* ━━━ Interactive States ━━━ */
+   --theme-border-radius: 6px !important;
+   --theme-box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3) !important;
+   --theme-transition-duration: 0.2s !important;
+   --theme-transition-timing: cubic-bezier(0.4, 0, 0.2, 1) !important;
+
+   --theme-selection-background: rgba(255, 255, 255, 0.07) !important;
+   --theme-focus-outline-color: rgba(255, 255, 255, 0.07) !important;
+   --theme-toolbar-hover: rgba(255, 255, 255, 0.07) !important;
+   --theme-toolbar-active: rgba(255, 255, 255, 0.12) !important;
+
+   /* ━━━ Syntax Highlighting ━━━ */
+   --theme-highlight-blue: #82aaff !important;
+   --theme-highlight-purple: #c792ea !important;
+   --theme-highlight-pink: #ff5370 !important;
+   --theme-highlight-red: #f07178 !important;
+   --theme-highlight-orange: #f78c6c !important;
+   --theme-highlight-lightorange: #ffcb6b !important;
+   --theme-highlight-green: #c3e88d !important;
+   --theme-highlight-bluegrey: #89ddff !important;
+   --theme-highlight-yellow: #ffcb6b !important;
+
+   /* ━━━ Semantic Colors ━━━ */
+   --console-error-color: #fff;
+   --console-error-border: #e3b2b245;
+   --console-error-background: #e78cbf3d;
+   --theme-icon-error-color: #fff;
+
+   --console-warning-color: #fff;
+   --console-warning-border: #f7eacc85;
+   --console-warning-background: #f7bb5d52;
+   --theme-icon-warning-color: #fff;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   LIGHT THEME
+   ═══════════════════════════════════════════════════════════════ */
+
+:root.theme-light {
+   /* ━━━ Base Colors ━━━ */
+   --theme-tab-toolbar-background: #f0f0f2 !important;
+   --theme-toolbar-background: #e8e8ea !important;
+   --theme-selection-color: #000000 !important;
+   --theme-splitter-color: rgba(0, 0, 0, 0.15) !important;
+   --theme-comment: #5c6773 !important;
+
+   --test-theme-body-background: #ffffff !important;
+   --theme-sidebar-background: #f5f5f7 !important;
+
+   --theme-body-color: #333333 !important;
+   --theme-body-color-alt: #202020 !important;
+   --theme-content-color1: #0f0f0f !important;
+   --theme-content-color2: #333333 !important;
+   --theme-content-color3: #696969 !important;
+
+   /* ━━━ Interactive States ━━━ */
+   --theme-border-radius: 6px !important;
+   --theme-box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15) !important;
+   --theme-transition-duration: 0.2s !important;
+   --theme-transition-timing: cubic-bezier(0.4, 0, 0.2, 1) !important;
+
+   --theme-selection-background: rgba(0, 0, 0, 0.07) !important;
+   --theme-focus-outline-color: rgba(0, 0, 0, 0.07) !important;
+   --theme-toolbar-selected-color: black !important;
+   --theme-toolbar-hover: rgba(0, 0, 0, 0.07) !important;
+   --theme-toolbar-active: rgba(0, 0, 0, 0.12) !important;
+
+   /* ━━━ Syntax Highlighting ━━━ */
+   --theme-highlight-blue: #1565c0 !important;
+   --theme-highlight-purple: #6a1b9a !important;
+   --theme-highlight-pink: #d81b60 !important;
+   --theme-highlight-red: #c62828 !important;
+   --theme-highlight-orange: #ef6c00 !important;
+   --theme-highlight-lightorange: #f57f17 !important;
+   --theme-highlight-green: #2e7d32 !important;
+   --theme-highlight-bluegrey: #0277bd !important;
+   --theme-highlight-yellow: #f9a825 !important;
+
+   /* ━━━ Semantic Colors ━━━ */
+   --console-error-color: #000;
+   --console-error-border: #e3b2b245;
+   --console-error-background: #e78cbf3d;
+   --theme-icon-error-color: #000;
+
+   --console-warning-color: #000;
+   --console-warning-border: #f7eacc85;
+   --console-warning-background: #f7bb5d52;
+   --theme-icon-warning-color: #000;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   GLOBAL STYLES
+   ═══════════════════════════════════════════════════════════════ */
+
+.theme-body {
+   background: #18181a !important;
+   font-family: var(--theme-font-family) !important;
+}
+
+:root.theme-light .theme-body {
+   background: #ffffff !important;
+}
+
+/* ━━━ Smooth Scrolling ━━━ */
+* {
+   scrollbar-width: thin !important;
+   scrollbar-color: var(--theme-toolbar-active) transparent !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   TABS & NAVIGATION
+   ═══════════════════════════════════════════════════════════════ */
+
+.devtools-tab,
+.devtools-sidebar-tabs tab {
+   border-radius: var(--theme-border-radius) var(--theme-border-radius) 0 0 !important;
+   transition: background-color var(--theme-transition-duration) var(--theme-transition-timing),
+      box-shadow var(--theme-transition-duration) var(--theme-transition-timing),
+      padding var(--theme-transition-duration) var(--theme-transition-timing) !important;
+   font-family: var(--theme-font-family);
+   letter-spacing: 0.2px;
+}
+
+.devtools-tab.selected,
+.devtools-sidebar-tabs tab[selected] {
+   position: relative !important;
+   background-color: rgba(255, 255, 255, 0.07) !important;
+}
+
+:root.theme-light .devtools-tab.selected,
+:root.theme-light .devtools-sidebar-tabs tab[selected] {
+   background-color: rgba(0, 0, 0, 0.07) !important;
+}
+
+.devtools-tab.selected::after,
+.devtools-sidebar-tabs tab[selected]::after {
+   content: '' !important;
+   position: absolute !important;
+   bottom: 0 !important;
+   left: 0 !important;
+   right: 0 !important;
+   height: 2px !important;
+   background-color: var(--theme-highlight-blue) !important;
+   border-top: 0 solid transparent !important;
+   border-radius: 1px !important;
+   animation: slideInTab var(--theme-duration-normal) var(--theme-timing-function) !important;
+}
+
+@keyframes slideInTab {
+   from {
+      transform: scaleX(0);
+      opacity: 0;
+   }
+   to {
+      transform: scaleX(1);
+      opacity: 1;
+   }
+}
+
+.devtools-tab:hover {
+   padding: 3px !important;
+}
+
+.devtools-tab-line {
+   display: none;
+}
+
+/* ━━━ Tabs Menu Items ━━━ */
+.tabs .tabs-menu-item {
+   transition: background-color var(--theme-transition-duration) var(--theme-transition-timing),
+      box-shadow var(--theme-transition-duration) var(--theme-transition-timing),
+      padding var(--theme-transition-duration) var(--theme-transition-timing) !important;
+}
+
+.tabs .tabs-menu-item.is-active {
+   background-color: rgba(255, 255, 255, 0.07) !important;
+}
+
+:root.theme-light .tabs .tabs-menu-item.is-active {
+   background-color: rgba(0, 0, 0, 0.07) !important;
+}
+
+/* ━━━ Source Tabs (Debugger) ━━━ */
+.source-tab::before {
+   background-color: unset !important;
+}
+
+.source-tab.active {
+   background-color: var(--theme-toolbar-active) !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   TOOLBARS & BUTTONS
+   ═══════════════════════════════════════════════════════════════ */
+
+.devtools-button,
+.devtools-toolbarbutton {
+   border-radius: 4px !important;
+   transition: all var(--theme-transition-duration) var(--theme-transition-timing) !important;
+   font-family: var(--theme-font-family);
+}
+
+.devtools-tabbar-button:hover {
+   background-color: var(--theme-toolbar-hover) !important;
+   transform: translateY(-1px) !important;
+}
+
+.devtools-tabbar-button:active {
+   background-color: var(--theme-toolbar-active) !important;
+   transform: translateY(0) !important;
+}
+
+.devtools-button:hover,
+.devtools-toolbarbutton:hover {
+   background-color: var(--theme-toolbar-hover) !important;
+   transform: translateY(-1px) !important;
+}
+
+.devtools-button:active,
+.devtools-toolbarbutton:active {
+   background-color: var(--theme-toolbar-active) !important;
+   transform: translateY(0) !important;
+}
+
+/* ━━━ Toggle Buttons ━━━ */
+.devtools-togglebutton {
+   border-block: none !important;
+   padding: 4px 8px !important;
+   border-radius: 4px !important;
+   border: none !important;
+}
+
+.devtools-togglebutton[aria-pressed="true"] {
+   background-color: #80808024 !important;
+   color: #fff !important;
+}
+
+:root.theme-light .devtools-togglebutton[aria-pressed="true"] {
+   background-color: rgba(0, 0, 0, 0.14) !important;
+   color: #000 !important;
+}
+
+.devtools-tabbar-button.checked {
+   color: white !important;
+}
+
+:root.theme-light .devtools-tabbar-button.checked {
+   color: black !important;
+}
+
+/* ━━━ Checkbox Containers ━━━ */
+.checkbox-container.menu-standard-padding {
+   background: #303033 !important;
+   border-radius: 12px !important;
+}
+
+:root.theme-light .checkbox-container.menu-standard-padding {
+   background: #f0f0f2 !important;
+   border-radius: 12px !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   PANELS & CONTAINERS - MINIMAL CHANGES
+   ═══════════════════════════════════════════════════════════════ */
+
+.panel-container {
+   background: #6c6c6c4f !important;
+   border-radius: 0 0 5px 5px !important;
+}
+
+:root.theme-light .panel-container {
+   background: #dcdcdc4f !important;
+   border-radius: 0 0 5px 5px !important;
+}
+
+/* ━━━ Code Mirror - Keep lightweight ━━━ */
+.CodeMirror,
+.inspector-tabpanel {
+   border-radius: var(--theme-border-radius) !important;
+   transition: opacity var(--theme-transition-duration) var(--theme-transition-timing) !important;
+   font-family: var(--theme-font-family) !important;
+}
+
+.CodeMirror-line {
+   padding: 4px !important;
+}
+
+/* ━━━ Tree Views - Conservative padding ━━━ */
+.tree-row:hover,
+.devtools-list-item:hover {
+   transition: background-color var(--theme-transition-duration) var(--theme-transition-timing) !important;
+   background-color: var(--theme-toolbar-hover) !important;
+}
+
+.tag-line {
+   padding-block: 3px;
+}
+
+.theme-twisty {
+   opacity: 0.5 !important;
+   transition: opacity var(--theme-transition-duration) var(--theme-transition-timing) !important;
+}
+
+.theme-twisty:hover {
+   opacity: 1 !important;
+}
+
+.theme-selected {
+   background-color: #39393b !important;
+}
+
+:root.theme-light .theme-selected {
+   background-color: #e0e0e2 !important;
+}
+
+.tree-node.focused {
+   background-color: var(--theme-toolbar-active) !important;
+}
+
+.tree .tree-node:not(.focused):hover {
+   background-color: var(--theme-toolbar-active) !important;
+   color: white !important;
+}
+
+:root.theme-light .tree .tree-node:not(.focused):hover {
+   color: black !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   CONSOLE - Keep original structure
+   ═══════════════════════════════════════════════════════════════ */
+
+.message {
+   padding: 4px;
+   border-top-color: #ffffff6b !important;
+   transition: background-color var(--theme-duration-fast) var(--theme-timing-smooth) !important;
+   animation: messageSlideIn var(--theme-duration-normal) var(--theme-timing-function) !important;
+}
+
+:root.theme-light .message {
+   border-top-color: #0000006b !important;
+}
+
+@keyframes messageSlideIn {
+   from {
+      opacity: 0;
+      transform: translateX(-8px);
+   }
+   to {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
+
+.message:hover {
+   background-color: var(--theme-toolbar-hover) !important;
+}
+
+/* ━━━ Error Messages ━━━ */
+.message.error {
+   background: var(--console-error-background) !important;
+   border-left: 3px solid var(--console-error-border) !important;
+   color: var(--console-error-color) !important;
+   border-radius: var(--theme-radius-sm) !important;
+}
+
+.message.error:hover {
+   box-shadow: var(--console-error-glow) !important;
+}
+
+/* ━━━ Warning Messages ━━━ */
+.message.warn,
+.message.warning {
+   background: var(--console-warning-background) !important;
+   border-left: 3px solid var(--console-warning-border) !important;
+   color: var(--console-warning-color) !important;
+   border-radius: var(--theme-radius-sm) !important;
+}
+
+.message.warn:hover,
+.message.warning:hover {
+   box-shadow: var(--console-warning-glow) !important;
+}
+
+/* ━━━ Message Repeat Counter ━━━ */
+.message-repeats {
+   background-color: white !important;
+   color: black !important;
+   border-radius: 12px !important;
+   padding: 2px 6px !important;
+   font-weight: 600 !important;
+}
+
+:root.theme-light .message-repeats {
+   background-color: black !important;
+   color: white !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   NETWORK MONITOR - DO NOT BREAK LAYOUT
+   ═══════════════════════════════════════════════════════════════ */
+
+.network-monitor {
+   outline: 1px solid rgba(255, 255, 255, 0.5) !important;
+   border-radius: 0 0 5px 5px !important;
+}
+
+:root.theme-light .network-monitor {
+   outline: 1px solid rgba(0, 0, 0, 0.5) !important;
+}
+
+.network.message .network-info #response-panel {
+   height: 350px !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   INSPECTOR & RULES VIEW
+   ═══════════════════════════════════════════════════════════════ */
+
+.ruleview-rule-source-label {
+   color: #c6c6c6bd !important;
+}
+
+:root.theme-light .ruleview-rule-source-label {
+   color: #3c3c3cbd !important;
+}
+
+.ruleview-enableproperty {
+   appearance: auto !important;
+   margin-bottom: 2px !important;
+   cursor: pointer !important;
+   transition: transform var(--theme-duration-fast) var(--theme-timing-smooth) !important;
+}
+
+.ruleview-enableproperty:hover {
+   transform: scale(1.1) !important;
+}
+
+.ruleview-highlight {
+   background-color: rgb(0, 0, 0) !important;
+}
+
+:root.theme-light .ruleview-highlight {
+   background-color: rgba(255, 217, 15, 0.59) !important;
+}
+
+.stylesheet-system.splitview-nav > li.splitview-active {
+   background-color: var(--theme-toolbar-active) !important;
+}
+
+/* ━━━ Frame Links ━━━ */
+.frame-link-filename {
+   color: #bcbcbc !important;
+}
+
+.frame-link .frame-link-source {
+   color: #bcbcbc !important;
+}
+
+:root.theme-light .frame-link-filename {
+   color: #4c4c4c !important;
+}
+
+:root.theme-light .frame-link .frame-link-source {
+   color: #4c4c4c !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   SPLITTERS - Minimal changes
+   ═══════════════════════════════════════════════════════════════ */
+
+.devtools-separator {
+   opacity: 0;
+}
+
+.split-box.vert > .splitter {
+   min-width: 10px !important;
+}
+
+.split-box.horz > .splitter {
+   min-height: 10px !important;
+}
+
+.devtools-side-splitter {
+   min-width: 10px !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   TOOLTIPS
+   ═══════════════════════════════════════════════════════════════ */
+
+.tooltip-container,
+.devtools-tooltip {
+   box-shadow: var(--theme-box-shadow) !important;
+   animation: tooltipFade 0.2s var(--theme-transition-timing) !important;
+   font-family: var(--theme-font-family);
+}
+
+@keyframes tooltipFade {
+   from {
+      opacity: 0;
+      transform: translateY(5px);
+   }
+   to {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   CLOSE BUTTON (Special Animation)
+   ═══════════════════════════════════════════════════════════════ */
+
+#toolbox-close {
+   position: relative;
+}
+
+#toolbox-close::before {
+   content: "";
+   background-image: url("chrome://devtools/skin/images/close.svg");
+   background-size: contain;
+   background-repeat: no-repeat;
+   display: inline-block;
+   width: 24px;
+   height: 24px;
+   opacity: 1;
+   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%) scale(1);
+}
+
+#toolbox-close::after {
+   content: "👋";
+   font-size: 20px;
+   display: inline-block;
+   opacity: 0;
+   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%) scale(0);
+}
+
+#toolbox-close:hover::before {
+   transform: translate(-50%, -50%) scale(0);
+   opacity: 0;
+}
+
+#toolbox-close:hover::after {
+   transform: translate(-50%, -50%) scale(1);
+   opacity: 1;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   ACCESSIBILITY ENHANCEMENTS
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ━━━ Focus Indicators ━━━ */
+*:focus-visible {
+   outline: 2px solid var(--theme-highlight-blue) !important;
+   outline-offset: 2px !important;
+}
+
+/* ━━━ Reduced Motion ━━━ */
+@media (prefers-reduced-motion: reduce) {
+   *,
+   *::before,
+   *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+   }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   END OF STYLESHEET
+   ═══════════════════════════════════════════════════════════════ */
