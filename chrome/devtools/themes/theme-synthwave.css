@@ -1,0 +1,157 @@
+/* ═══════════════════════════════════════════════════════════════
+   DEVTOOLS THEME: Synthwave
+   Neon-drenched 80s retrofuturism. Dark only — no light variant.
+   Pair with: @import url('./themes/theme-synthwave.css');
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ━━━ Synthwave Palette ━━━ */
+:root {
+  --sw-bg: #0d0221;
+  --sw-surface: #1a0533;
+  --sw-elevated: #2d0b4e;
+  --sw-border: #3d1a6e;
+
+  --sw-cyan: #36f9f6;
+  --sw-pink: #ff2d78;
+  --sw-purple: #e040fb;
+  --sw-yellow: #ffd700;
+  --sw-orange: #ff9640;
+  --sw-green: #72f1b8;
+  --sw-red: #ff3c6e;
+  --sw-blue: #2979ff;
+
+  --sw-fg: #e0d7ff;
+  --sw-fg-dim: #9d8ec7;
+  --sw-fg-dimmer: #5c4d8a;
+
+  /* ━━━ Console Glows ━━━ */
+  --console-error-glow: 0 0 20px rgba(255, 45, 120, 0.45);
+  --console-warning-glow: 0 0 20px rgba(255, 215, 0, 0.35);
+}
+
+/* ━━━ DARK ━━━ */
+:root.theme-dark {
+  --theme-tab-toolbar-background: var(--sw-surface) !important;
+  --theme-toolbar-background: var(--sw-elevated) !important;
+  --theme-selection-color: var(--sw-fg) !important;
+  --theme-splitter-color: var(--sw-border) !important;
+  --theme-comment: var(--sw-fg-dim) !important;
+
+  --test-theme-body-background: var(--sw-bg) !important;
+  --theme-sidebar-background: var(--sw-surface) !important;
+  --theme-body-background: var(--sw-bg) !important;
+
+  --theme-body-color: var(--sw-fg) !important;
+  --theme-body-color-alt: #f0eaff !important;
+  --theme-content-color1: #ffffff !important;
+  --theme-content-color2: var(--sw-fg) !important;
+  --theme-content-color3: var(--sw-fg-dim) !important;
+
+  --theme-selection-background: rgba(224, 64, 251, 0.18) !important;
+  --theme-focus-outline-color: rgba(224, 64, 251, 0.4) !important;
+  --theme-toolbar-hover: rgba(180, 100, 255, 0.15) !important;
+  --theme-toolbar-active: rgba(180, 100, 255, 0.28) !important;
+  --theme-togglebutton-active: rgba(224, 64, 251, 0.22) !important;
+
+  /* ━━━ Syntax Highlighting ━━━ */
+  --theme-highlight-blue: var(--sw-cyan) !important;
+  --theme-highlight-purple: var(--sw-purple) !important;
+  --theme-highlight-pink: var(--sw-pink) !important;
+  --theme-highlight-red: var(--sw-red) !important;
+  --theme-highlight-orange: var(--sw-orange) !important;
+  --theme-highlight-lightorange: #ffb347 !important;
+  --theme-highlight-green: var(--sw-green) !important;
+  --theme-highlight-bluegrey: var(--sw-cyan) !important;
+  --theme-highlight-yellow: var(--sw-yellow) !important;
+
+  /* ━━━ Semantic UI ━━━ */
+  --theme-selected-background: var(--sw-elevated) !important;
+  --theme-checkbox-background: var(--sw-elevated) !important;
+  --theme-panel-background: rgba(45, 11, 78, 0.5) !important;
+  --theme-ruleview-source-color: var(--sw-fg-dim) !important;
+  --theme-frame-link-color: var(--sw-fg-dim) !important;
+  --theme-ruleview-highlight: rgba(54, 249, 246, 0.18) !important;
+  --theme-message-border-color: rgba(180, 100, 255, 0.3) !important;
+  --theme-network-outline: rgba(54, 249, 246, 0.35) !important;
+  --theme-message-repeats-bg: var(--sw-purple) !important;
+  --theme-message-repeats-color: #ffffff !important;
+  --theme-twisty-opacity: 0.55 !important;
+
+  /* ━━━ Console Messages ━━━ */
+  --console-error-color: #ffb3cb !important;
+  --console-error-border: rgba(255, 45, 120, 0.4) !important;
+  --console-error-background: rgba(255, 45, 120, 0.12) !important;
+  --theme-icon-error-color: var(--sw-pink) !important;
+
+  --console-warning-color: #fff3b0 !important;
+  --console-warning-border: rgba(255, 215, 0, 0.4) !important;
+  --console-warning-background: rgba(255, 215, 0, 0.1) !important;
+  --theme-icon-warning-color: var(--sw-yellow) !important;
+}
+
+/* ━━━ LIGHT ━━━
+   Synthwave doesn't really have a light mode — this is a muted
+   pastel-on-white fallback so it doesn't break if Firefox ever
+   switches to light devtools mode on you.
+━━━ */
+:root.theme-light {
+  --theme-tab-toolbar-background: #f0eaff !important;
+  --theme-toolbar-background: #e8dfff !important;
+  --theme-selection-color: #1a0533 !important;
+  --theme-splitter-color: rgba(109, 40, 217, 0.2) !important;
+  --theme-comment: #7c3aed !important;
+
+  --test-theme-body-background: #fafafa !important;
+  --theme-sidebar-background: #f5f0ff !important;
+  --theme-body-background: #fafafa !important;
+
+  --theme-body-color: #2d0b4e !important;
+  --theme-body-color-alt: #1a0533 !important;
+  --theme-content-color1: #0d0221 !important;
+  --theme-content-color2: #2d0b4e !important;
+  --theme-content-color3: #7c3aed !important;
+
+  --theme-selection-background: rgba(109, 40, 217, 0.1) !important;
+  --theme-focus-outline-color: rgba(109, 40, 217, 0.25) !important;
+  --theme-toolbar-hover: rgba(109, 40, 217, 0.1) !important;
+  --theme-toolbar-active: rgba(109, 40, 217, 0.18) !important;
+  --theme-togglebutton-active: rgba(109, 40, 217, 0.14) !important;
+
+  /* ━━━ Syntax Highlighting (accessible on white) ━━━ */
+  --theme-highlight-blue: #0077cc !important;
+  --theme-highlight-purple: #7c3aed !important;
+  --theme-highlight-pink: #c2185b !important;
+  --theme-highlight-red: #d32f2f !important;
+  --theme-highlight-orange: #e65100 !important;
+  --theme-highlight-lightorange: #f57c00 !important;
+  --theme-highlight-green: #1b5e20 !important;
+  --theme-highlight-bluegrey: #0277bd !important;
+  --theme-highlight-yellow: #f9a825 !important;
+
+  /* ━━━ Semantic UI ━━━ */
+  --theme-selected-background: #e8dfff !important;
+  --theme-checkbox-background: #f0eaff !important;
+  --theme-panel-background: rgba(232, 223, 255, 0.5) !important;
+  --theme-ruleview-source-color: #7c3aedbd !important;
+  --theme-frame-link-color: #7c3aed !important;
+  --theme-ruleview-highlight: rgba(109, 40, 217, 0.15) !important;
+  --theme-message-border-color: rgba(109, 40, 217, 0.25) !important;
+  --theme-network-outline: rgba(109, 40, 217, 0.4) !important;
+  --theme-message-repeats-bg: #7c3aed !important;
+  --theme-message-repeats-color: #ffffff !important;
+  --theme-twisty-opacity: 0.5 !important;
+
+  /* ━━━ Console Messages ━━━ */
+  --console-error-color: #b71c1c !important;
+  --console-error-border: rgba(211, 47, 47, 0.4) !important;
+  --console-error-background: rgba(211, 47, 47, 0.08) !important;
+  --theme-icon-error-color: #d32f2f !important;
+
+  --console-warning-color: #e65100 !important;
+  --console-warning-border: rgba(230, 81, 0, 0.4) !important;
+  --console-warning-background: rgba(230, 81, 0, 0.08) !important;
+  --theme-icon-warning-color: #e65100 !important;
+
+  --console-error-glow: 0 0 16px rgba(211, 47, 47, 0.2);
+  --console-warning-glow: 0 0 16px rgba(230, 81, 0, 0.2);
+}

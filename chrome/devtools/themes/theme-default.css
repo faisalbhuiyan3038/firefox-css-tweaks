@@ -1,0 +1,130 @@
+/* ═══════════════════════════════════════════════════════════════
+   THEME: Default (Dark + Light)
+   ═══════════════════════════════════════════════════════════════ */
+
+:root {
+  /* ━━━ Console Glow Colors ━━━ */
+  --console-error-glow: 0 0 16px rgba(255, 82, 120, 0.25);
+  --console-warning-glow: 0 0 16px rgba(255, 193, 7, 0.25);
+}
+
+/* ━━━ DARK ━━━ */
+:root.theme-dark {
+  --theme-togglebutton-active: #80808024;
+  --theme-tab-toolbar-background: #2a2a2c;
+  --theme-toolbar-background: #323234;
+  --theme-selection-color: #ffffff;
+  --theme-splitter-color: rgba(0, 0, 0, 0.25);
+  --theme-comment: #7f8c98;
+
+  --test-theme-body-background: #1e1e20;
+  --theme-sidebar-background: #252527;
+  --theme-body-background: #18181a;
+
+  --theme-body-color: #cdcdcd;
+  --theme-body-color-alt: #e0e0e0;
+  --theme-content-color1: #f0f0f0;
+  --theme-content-color2: #cdcdcd;
+  --theme-content-color3: #969696;
+
+  --theme-selection-background: rgba(255, 255, 255, 0.07);
+  --theme-focus-outline-color: rgba(255, 255, 255, 0.07);
+  --theme-toolbar-hover: rgba(255, 255, 255, 0.07);
+  --theme-toolbar-active: rgba(255, 255, 255, 0.12);
+
+  /* ━━━ Syntax Highlighting ━━━ */
+  --theme-highlight-blue: #82aaff;
+  --theme-highlight-purple: #c792ea;
+  --theme-highlight-pink: #ff5370;
+  --theme-highlight-red: #f07178;
+  --theme-highlight-orange: #f78c6c;
+  --theme-highlight-lightorange: #ffcb6b;
+  --theme-highlight-green: #c3e88d;
+  --theme-highlight-bluegrey: #89ddff;
+  --theme-highlight-yellow: #ffcb6b;
+
+  /* ━━━ Semantic UI Colors ━━━ */
+  --theme-selected-background: #39393b;
+  --theme-checkbox-background: #303033;
+  --theme-panel-background: #6c6c6c4f;
+  --theme-ruleview-source-color: #c6c6c6bd;
+  --theme-frame-link-color: #bcbcbc;
+  --theme-ruleview-highlight: rgb(0, 0, 0);
+  --theme-message-border-color: #ffffff6b;
+  --theme-network-outline: rgba(255, 255, 255, 0.5);
+  --theme-message-repeats-bg: white;
+  --theme-message-repeats-color: black;
+  --theme-twisty-opacity: 0.5;
+
+  /* ━━━ Console Messages ━━━ */
+  --console-error-color: #fff;
+  --console-error-border: #e3b2b245;
+  --console-error-background: #e78cbf3d;
+  --theme-icon-error-color: #fff;
+
+  --console-warning-color: #fff;
+  --console-warning-border: #f7eacc85;
+  --console-warning-background: #f7bb5d52;
+  --theme-icon-warning-color: #fff;
+}
+
+/* ━━━ LIGHT ━━━ */
+:root.theme-light {
+  --theme-togglebutton-active: rgba(0, 0, 0, 0.14);
+  --theme-tab-toolbar-background: #f0f0f2;
+  --theme-toolbar-background: #e8e8ea;
+  --theme-selection-color: #000000;
+  --theme-splitter-color: rgba(0, 0, 0, 0.15);
+  --theme-comment: #5c6773;
+
+  --test-theme-body-background: #ffffff;
+  --theme-sidebar-background: #f5f5f7;
+  --theme-body-background: #ffffff;
+
+  --theme-body-color: #333333;
+  --theme-body-color-alt: #202020;
+  --theme-content-color1: #0f0f0f;
+  --theme-content-color2: #333333;
+  --theme-content-color3: #696969;
+
+  --theme-selection-background: rgba(0, 0, 0, 0.07);
+  --theme-focus-outline-color: rgba(0, 0, 0, 0.07);
+  --theme-toolbar-selected-color: black;
+  --theme-toolbar-hover: rgba(0, 0, 0, 0.07);
+  --theme-toolbar-active: rgba(0, 0, 0, 0.12);
+
+  /* ━━━ Syntax Highlighting ━━━ */
+  --theme-highlight-blue: #1565c0;
+  --theme-highlight-purple: #6a1b9a;
+  --theme-highlight-pink: #d81b60;
+  --theme-highlight-red: #c62828;
+  --theme-highlight-orange: #ef6c00;
+  --theme-highlight-lightorange: #f57f17;
+  --theme-highlight-green: #2e7d32;
+  --theme-highlight-bluegrey: #0277bd;
+  --theme-highlight-yellow: #f9a825;
+
+  /* ━━━ Semantic UI Colors ━━━ */
+  --theme-selected-background: #e0e0e2;
+  --theme-checkbox-background: #f0f0f2;
+  --theme-panel-background: #dcdcdc4f;
+  --theme-ruleview-source-color: #3c3c3cbd;
+  --theme-frame-link-color: #4c4c4c;
+  --theme-ruleview-highlight: rgba(255, 217, 15, 0.59);
+  --theme-message-border-color: #0000006b;
+  --theme-network-outline: rgba(0, 0, 0, 0.5);
+  --theme-message-repeats-bg: black;
+  --theme-message-repeats-color: white;
+  --theme-twisty-opacity: 0.5;
+
+  /* ━━━ Console Messages ━━━ */
+  --console-error-color: #000;
+  --console-error-border: #e3b2b245;
+  --console-error-background: #e78cbf3d;
+  --theme-icon-error-color: #000;
+
+  --console-warning-color: #000;
+  --console-warning-border: #f7eacc85;
+  --console-warning-background: #f7bb5d52;
+  --theme-icon-warning-color: #000;
+}

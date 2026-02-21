@@ -1,6 +1,7 @@
 /* ═══════════════════════════════════════════════════════════════
    FIREFOX DEVTOOLS - ENHANCED THEME (REFINED)
-   Modern visuals without breaking functionality
+   Structure & animations only — no hardcoded colors.
+   All colors live in your theme file (e.g. themes/theme-default.css)
    ═══════════════════════════════════════════════════════════════ */
 
 :root {
@@ -20,121 +21,19 @@
    /* ━━━ Border Radius ━━━ */
    --theme-radius-sm: 4px;
    --theme-radius-md: 6px;
-
-   /* ━━━ Console Colors (Universal) ━━━ */
-   --console-error-glow: 0 0 16px rgba(255, 82, 120, 0.25);
-   --console-warning-glow: 0 0 16px rgba(255, 193, 7, 0.25);
 }
 
 /* ═══════════════════════════════════════════════════════════════
-   DARK THEME
+   SHARED INTERACTIVE STATE VARS
+   (theme files set the color values, these wire them up)
    ═══════════════════════════════════════════════════════════════ */
 
-:root.theme-dark {
-   /* ━━━ Base Colors ━━━ */
-   --theme-tab-toolbar-background: #2a2a2c !important;
-   --theme-toolbar-background: #323234 !important;
-   --theme-selection-color: #ffffff !important;
-   --theme-splitter-color: rgba(0, 0, 0, 0.25) !important;
-   --theme-comment: #7f8c98 !important;
-
-   --test-theme-body-background: #1e1e20 !important;
-   --theme-sidebar-background: #252527 !important;
-
-   --theme-body-color: #cdcdcd !important;
-   --theme-body-color-alt: #e0e0e0 !important;
-   --theme-content-color1: #f0f0f0 !important;
-   --theme-content-color2: #cdcdcd !important;
-   --theme-content-color3: #969696 !important;
-
-   /* ━━━ Interactive States ━━━ */
+:root.theme-dark,
+:root.theme-light {
    --theme-border-radius: 6px !important;
    --theme-box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3) !important;
    --theme-transition-duration: 0.2s !important;
    --theme-transition-timing: cubic-bezier(0.4, 0, 0.2, 1) !important;
-
-   --theme-selection-background: rgba(255, 255, 255, 0.07) !important;
-   --theme-focus-outline-color: rgba(255, 255, 255, 0.07) !important;
-   --theme-toolbar-hover: rgba(255, 255, 255, 0.07) !important;
-   --theme-toolbar-active: rgba(255, 255, 255, 0.12) !important;
-
-   /* ━━━ Syntax Highlighting ━━━ */
-   --theme-highlight-blue: #82aaff !important;
-   --theme-highlight-purple: #c792ea !important;
-   --theme-highlight-pink: #ff5370 !important;
-   --theme-highlight-red: #f07178 !important;
-   --theme-highlight-orange: #f78c6c !important;
-   --theme-highlight-lightorange: #ffcb6b !important;
-   --theme-highlight-green: #c3e88d !important;
-   --theme-highlight-bluegrey: #89ddff !important;
-   --theme-highlight-yellow: #ffcb6b !important;
-
-   /* ━━━ Semantic Colors ━━━ */
-   --console-error-color: #fff;
-   --console-error-border: #e3b2b245;
-   --console-error-background: #e78cbf3d;
-   --theme-icon-error-color: #fff;
-
-   --console-warning-color: #fff;
-   --console-warning-border: #f7eacc85;
-   --console-warning-background: #f7bb5d52;
-   --theme-icon-warning-color: #fff;
-}
-
-/* ═══════════════════════════════════════════════════════════════
-   LIGHT THEME
-   ═══════════════════════════════════════════════════════════════ */
-
-:root.theme-light {
-   /* ━━━ Base Colors ━━━ */
-   --theme-tab-toolbar-background: #f0f0f2 !important;
-   --theme-toolbar-background: #e8e8ea !important;
-   --theme-selection-color: #000000 !important;
-   --theme-splitter-color: rgba(0, 0, 0, 0.15) !important;
-   --theme-comment: #5c6773 !important;
-
-   --test-theme-body-background: #ffffff !important;
-   --theme-sidebar-background: #f5f5f7 !important;
-
-   --theme-body-color: #333333 !important;
-   --theme-body-color-alt: #202020 !important;
-   --theme-content-color1: #0f0f0f !important;
-   --theme-content-color2: #333333 !important;
-   --theme-content-color3: #696969 !important;
-
-   /* ━━━ Interactive States ━━━ */
-   --theme-border-radius: 6px !important;
-   --theme-box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15) !important;
-   --theme-transition-duration: 0.2s !important;
-   --theme-transition-timing: cubic-bezier(0.4, 0, 0.2, 1) !important;
-
-   --theme-selection-background: rgba(0, 0, 0, 0.07) !important;
-   --theme-focus-outline-color: rgba(0, 0, 0, 0.07) !important;
-   --theme-toolbar-selected-color: black !important;
-   --theme-toolbar-hover: rgba(0, 0, 0, 0.07) !important;
-   --theme-toolbar-active: rgba(0, 0, 0, 0.12) !important;
-
-   /* ━━━ Syntax Highlighting ━━━ */
-   --theme-highlight-blue: #1565c0 !important;
-   --theme-highlight-purple: #6a1b9a !important;
-   --theme-highlight-pink: #d81b60 !important;
-   --theme-highlight-red: #c62828 !important;
-   --theme-highlight-orange: #ef6c00 !important;
-   --theme-highlight-lightorange: #f57f17 !important;
-   --theme-highlight-green: #2e7d32 !important;
-   --theme-highlight-bluegrey: #0277bd !important;
-   --theme-highlight-yellow: #f9a825 !important;
-
-   /* ━━━ Semantic Colors ━━━ */
-   --console-error-color: #000;
-   --console-error-border: #e3b2b245;
-   --console-error-background: #e78cbf3d;
-   --theme-icon-error-color: #000;
-
-   --console-warning-color: #000;
-   --console-warning-border: #f7eacc85;
-   --console-warning-background: #f7bb5d52;
-   --theme-icon-warning-color: #000;
 }
 
 /* ═══════════════════════════════════════════════════════════════
@@ -142,12 +41,8 @@
    ═══════════════════════════════════════════════════════════════ */
 
 .theme-body {
-   background: #18181a !important;
+   background: var(--theme-body-background) !important;
    font-family: var(--theme-font-family) !important;
-}
-
-:root.theme-light .theme-body {
-   background: #ffffff !important;
 }
 
 /* ━━━ Smooth Scrolling ━━━ */
@@ -173,12 +68,7 @@
 .devtools-tab.selected,
 .devtools-sidebar-tabs tab[selected] {
    position: relative !important;
-   background-color: rgba(255, 255, 255, 0.07) !important;
-}
-
-:root.theme-light .devtools-tab.selected,
-:root.theme-light .devtools-sidebar-tabs tab[selected] {
-   background-color: rgba(0, 0, 0, 0.07) !important;
+   background-color: var(--theme-toolbar-hover) !important;
 }
 
 .devtools-tab.selected::after,
@@ -200,6 +90,7 @@
       transform: scaleX(0);
       opacity: 0;
    }
+
    to {
       transform: scaleX(1);
       opacity: 1;
@@ -222,11 +113,7 @@
 }
 
 .tabs .tabs-menu-item.is-active {
-   background-color: rgba(255, 255, 255, 0.07) !important;
-}
-
-:root.theme-light .tabs .tabs-menu-item.is-active {
-   background-color: rgba(0, 0, 0, 0.07) !important;
+   background-color: var(--theme-toolbar-hover) !important;
 }
 
 /* ━━━ Source Tabs (Debugger) ━━━ */
@@ -280,49 +167,30 @@
 }
 
 .devtools-togglebutton[aria-pressed="true"] {
-   background-color: #80808024 !important;
-   color: #fff !important;
-}
-
-:root.theme-light .devtools-togglebutton[aria-pressed="true"] {
-   background-color: rgba(0, 0, 0, 0.14) !important;
-   color: #000 !important;
+   background-color: var(--theme-togglebutton-active) !important;
+   color: var(--theme-selection-color) !important;
 }
 
 .devtools-tabbar-button.checked {
-   color: white !important;
-}
-
-:root.theme-light .devtools-tabbar-button.checked {
-   color: black !important;
+   color: var(--theme-selection-color) !important;
 }
 
 /* ━━━ Checkbox Containers ━━━ */
 .checkbox-container.menu-standard-padding {
-   background: #303033 !important;
-   border-radius: 12px !important;
-}
-
-:root.theme-light .checkbox-container.menu-standard-padding {
-   background: #f0f0f2 !important;
+   background: var(--theme-checkbox-background) !important;
    border-radius: 12px !important;
 }
 
 /* ═══════════════════════════════════════════════════════════════
-   PANELS & CONTAINERS - MINIMAL CHANGES
+   PANELS & CONTAINERS
    ═══════════════════════════════════════════════════════════════ */
 
 .panel-container {
-   background: #6c6c6c4f !important;
+   background: var(--theme-panel-background) !important;
    border-radius: 0 0 5px 5px !important;
 }
 
-:root.theme-light .panel-container {
-   background: #dcdcdc4f !important;
-   border-radius: 0 0 5px 5px !important;
-}
-
-/* ━━━ Code Mirror - Keep lightweight ━━━ */
+/* ━━━ Code Mirror ━━━ */
 .CodeMirror,
 .inspector-tabpanel {
    border-radius: var(--theme-border-radius) !important;
@@ -334,7 +202,7 @@
    padding: 4px !important;
 }
 
-/* ━━━ Tree Views - Conservative padding ━━━ */
+/* ━━━ Tree Views ━━━ */
 .tree-row:hover,
 .devtools-list-item:hover {
    transition: background-color var(--theme-transition-duration) var(--theme-transition-timing) !important;
@@ -346,7 +214,7 @@
 }
 
 .theme-twisty {
-   opacity: 0.5 !important;
+   opacity: var(--theme-twisty-opacity) !important;
    transition: opacity var(--theme-transition-duration) var(--theme-transition-timing) !important;
 }
 
@@ -355,11 +223,7 @@
 }
 
 .theme-selected {
-   background-color: #39393b !important;
-}
-
-:root.theme-light .theme-selected {
-   background-color: #e0e0e2 !important;
+   background-color: var(--theme-selected-background) !important;
 }
 
 .tree-node.focused {
@@ -368,26 +232,18 @@
 
 .tree .tree-node:not(.focused):hover {
    background-color: var(--theme-toolbar-active) !important;
-   color: white !important;
-}
-
-:root.theme-light .tree .tree-node:not(.focused):hover {
-   color: black !important;
+   color: var(--theme-selection-color) !important;
 }
 
 /* ═══════════════════════════════════════════════════════════════
-   CONSOLE - Keep original structure
+   CONSOLE
    ═══════════════════════════════════════════════════════════════ */
 
 .message {
    padding: 4px;
-   border-top-color: #ffffff6b !important;
+   border-top-color: var(--theme-message-border-color) !important;
    transition: background-color var(--theme-duration-fast) var(--theme-timing-smooth) !important;
    animation: messageSlideIn var(--theme-duration-normal) var(--theme-timing-function) !important;
-}
-
-:root.theme-light .message {
-   border-top-color: #0000006b !important;
 }
 
 @keyframes messageSlideIn {
@@ -395,6 +251,7 @@
       opacity: 0;
       transform: translateX(-8px);
    }
+
    to {
       opacity: 1;
       transform: translateX(0);
@@ -433,29 +290,20 @@
 
 /* ━━━ Message Repeat Counter ━━━ */
 .message-repeats {
-   background-color: white !important;
-   color: black !important;
+   background-color: var(--theme-message-repeats-bg) !important;
+   color: var(--theme-message-repeats-color) !important;
    border-radius: 12px !important;
    padding: 2px 6px !important;
    font-weight: 600 !important;
 }
 
-:root.theme-light .message-repeats {
-   background-color: black !important;
-   color: white !important;
-}
-
 /* ═══════════════════════════════════════════════════════════════
-   NETWORK MONITOR - DO NOT BREAK LAYOUT
+   NETWORK MONITOR
    ═══════════════════════════════════════════════════════════════ */
 
 .network-monitor {
-   outline: 1px solid rgba(255, 255, 255, 0.5) !important;
+   outline: 1px solid var(--theme-network-outline) !important;
    border-radius: 0 0 5px 5px !important;
-}
-
-:root.theme-light .network-monitor {
-   outline: 1px solid rgba(0, 0, 0, 0.5) !important;
 }
 
 .network.message .network-info #response-panel {
@@ -467,11 +315,7 @@
    ═══════════════════════════════════════════════════════════════ */
 
 .ruleview-rule-source-label {
-   color: #c6c6c6bd !important;
-}
-
-:root.theme-light .ruleview-rule-source-label {
-   color: #3c3c3cbd !important;
+   color: var(--theme-ruleview-source-color) !important;
 }
 
 .ruleview-enableproperty {
@@ -486,47 +330,35 @@
 }
 
 .ruleview-highlight {
-   background-color: rgb(0, 0, 0) !important;
+   background-color: var(--theme-ruleview-highlight) !important;
 }
 
-:root.theme-light .ruleview-highlight {
-   background-color: rgba(255, 217, 15, 0.59) !important;
-}
-
-.stylesheet-system.splitview-nav > li.splitview-active {
+.stylesheet-system.splitview-nav>li.splitview-active {
    background-color: var(--theme-toolbar-active) !important;
 }
 
 /* ━━━ Frame Links ━━━ */
 .frame-link-filename {
-   color: #bcbcbc !important;
+   color: var(--theme-frame-link-color) !important;
 }
 
 .frame-link .frame-link-source {
-   color: #bcbcbc !important;
-}
-
-:root.theme-light .frame-link-filename {
-   color: #4c4c4c !important;
-}
-
-:root.theme-light .frame-link .frame-link-source {
-   color: #4c4c4c !important;
+   color: var(--theme-frame-link-color) !important;
 }
 
 /* ═══════════════════════════════════════════════════════════════
-   SPLITTERS - Minimal changes
+   SPLITTERS
    ═══════════════════════════════════════════════════════════════ */
 
 .devtools-separator {
    opacity: 0;
 }
 
-.split-box.vert > .splitter {
+.split-box.vert>.splitter {
    min-width: 10px !important;
 }
 
-.split-box.horz > .splitter {
+.split-box.horz>.splitter {
    min-height: 10px !important;
 }
 
@@ -550,6 +382,7 @@
       opacity: 0;
       transform: translateY(5px);
    }
+
    to {
       opacity: 1;
       transform: translateY(0);
@@ -606,14 +439,13 @@
    ACCESSIBILITY ENHANCEMENTS
    ═══════════════════════════════════════════════════════════════ */
 
-/* ━━━ Focus Indicators ━━━ */
 *:focus-visible {
    outline: 2px solid var(--theme-highlight-blue) !important;
    outline-offset: 2px !important;
 }
 
-/* ━━━ Reduced Motion ━━━ */
 @media (prefers-reduced-motion: reduce) {
+
    *,
    *::before,
    *::after {
