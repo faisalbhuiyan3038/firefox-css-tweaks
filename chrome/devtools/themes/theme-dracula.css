@@ -7,57 +7,57 @@
 
 /* ━━━ Dracula Palette ━━━ */
 :root {
-  --dracula-background: #282a36;
-  --dracula-current-line: #44475a;
-  --dracula-foreground: #f8f8f2;
-  --dracula-comment: #6272a4;
-  --dracula-black: #21222c;
+   --dracula-background:     #282a36;
+   --dracula-current-line:   #44475a;
+   --dracula-foreground:     #f8f8f2;
+   --dracula-comment:        #6272a4;
+   --dracula-black:          #21222c;
 
-  --dracula-cyan: #8be9fd;
-  --dracula-green: #50fa7b;
-  --dracula-orange: #ffb86c;
-  --dracula-pink: #ff79c6;
-  --dracula-purple: #bd93f9;
-  --dracula-red: #ff5555;
-  --dracula-yellow: #f1fa8c;
+   --dracula-cyan:           #8be9fd;
+   --dracula-green:          #50fa7b;
+   --dracula-orange:         #ffb86c;
+   --dracula-pink:           #ff79c6;
+   --dracula-purple:         #bd93f9;
+   --dracula-red:            #ff5555;
+   --dracula-yellow:         #f1fa8c;
 
-  --dracula-bright-cyan: #a4ffff;
-  --dracula-bright-green: #69ff94;
-  --dracula-bright-pink: #d6acff;
-  --dracula-bright-purple: #ff92df;
-  --dracula-bright-red: #ff6e6e;
-  --dracula-bright-yellow: #ffffa5;
+   --dracula-bright-cyan:    #a4ffff;
+   --dracula-bright-green:   #69ff94;
+   --dracula-bright-pink:    #d6acff;
+   --dracula-bright-purple:  #ff92df;
+   --dracula-bright-red:     #ff6e6e;
+   --dracula-bright-yellow:  #ffffa5;
 
-  /* ━━━ Console Glows ━━━ */
-  --console-error-glow: 0 0 16px rgba(255, 85, 85, 0.35);
-  --console-warning-glow: 0 0 16px rgba(255, 184, 108, 0.35);
+   /* ━━━ Console Glows ━━━ */
+   --console-error-glow:   0 0 16px rgba(255, 85, 85, 0.35);
+   --console-warning-glow: 0 0 16px rgba(255, 184, 108, 0.35);
 }
 
 /* ━━━ DARK ━━━ */
 :root.theme-dark {
-  --theme-tab-toolbar-background: var(--dracula-black) !important;
-  --theme-toolbar-background: var(--dracula-background) !important;
-  --theme-selection-color: var(--dracula-foreground) !important;
-  --theme-splitter-color: var(--dracula-current-line) !important;
-  --theme-comment: var(--dracula-comment) !important;
+   --theme-tab-toolbar-background:    var(--dracula-black) !important;
+   --theme-toolbar-background:        var(--dracula-background) !important;
+   --theme-selection-color:           var(--dracula-foreground) !important;
+   --theme-splitter-color:            var(--dracula-current-line) !important;
+   --theme-comment:                   var(--dracula-comment) !important;
 
-  --test-theme-body-background: var(--dracula-black) !important;
-  --theme-sidebar-background: var(--dracula-background) !important;
-  --theme-body-background: var(--dracula-black) !important;
+   --test-theme-body-background:      var(--dracula-black) !important;
+   --theme-sidebar-background:        var(--dracula-background) !important;
+   --theme-body-background:           var(--dracula-black) !important;
 
-  --theme-body-color: var(--dracula-foreground) !important;
-  --theme-body-color-alt: #ffffff !important;
-  --theme-content-color1: var(--dracula-foreground) !important;
-  --theme-content-color2: #d8d8d2 !important;
-  --theme-content-color3: var(--dracula-comment) !important;
+   --theme-body-color:                var(--dracula-foreground) !important;
+   --theme-body-color-alt:            #ffffff !important;
+   --theme-content-color1:            var(--dracula-foreground) !important;
+   --theme-content-color2:            #d8d8d2 !important;
+   --theme-content-color3:            var(--dracula-comment) !important;
 
-  --theme-selection-background: rgba(68, 71, 90, 0.6) !important;
-  --theme-focus-outline-color: rgba(189, 147, 249, 0.5) !important;
-  --theme-toolbar-hover: rgba(68, 71, 90, 0.6) !important;
-  --theme-toolbar-active: rgba(98, 114, 164, 0.35) !important;
-  --theme-togglebutton-active: rgba(68, 71, 90, 0.8) !important;
+   --theme-selection-background:      rgba(68, 71, 90, 0.6) !important;
+   --theme-focus-outline-color:       rgba(189, 147, 249, 0.5) !important;
+   --theme-toolbar-hover:             rgba(68, 71, 90, 0.6) !important;
+   --theme-toolbar-active:            rgba(98, 114, 164, 0.35) !important;
+   --theme-togglebutton-active:       rgba(68, 71, 90, 0.8) !important;
 
-  /* ━━━ Syntax Highlighting ━━━
+   /* ━━━ Syntax Highlighting ━━━
       These variable names are misleading — they map to token
       *roles*, not colors. Mapped by reading the original
       dracula userchrome.css and cross-referencing against
@@ -73,39 +73,58 @@
       --theme-highlight-bluegrey  → attribute names, ids       → Dracula CYAN
       --theme-highlight-yellow    → errors, special tokens     → Dracula RED
    ━━━ */
-  --theme-highlight-blue: var(--dracula-pink) !important;
-  --theme-highlight-purple: var(--dracula-yellow) !important;
-  --theme-highlight-pink: var(--dracula-purple) !important;
-  --theme-highlight-red: var(--dracula-green) !important;
-  --theme-highlight-orange: var(--dracula-orange) !important;
-  --theme-highlight-lightorange: var(--dracula-bright-yellow) !important;
-  --theme-highlight-green: var(--dracula-comment) !important;
-  --theme-highlight-bluegrey: var(--dracula-cyan) !important;
-  --theme-highlight-yellow: var(--dracula-red) !important;
+   --theme-highlight-blue:            var(--dracula-pink) !important;
+   --theme-highlight-purple:          var(--dracula-yellow) !important;
+   --theme-highlight-pink:            var(--dracula-purple) !important;
+   --theme-highlight-red:             var(--dracula-green) !important;
+   --theme-highlight-orange:          var(--dracula-orange) !important;
+   --theme-highlight-lightorange:     var(--dracula-bright-yellow) !important;
+   --theme-highlight-green:           var(--dracula-comment) !important;
+   --theme-highlight-bluegrey:        var(--dracula-cyan) !important;
+   --theme-highlight-yellow:          var(--dracula-red) !important;
 
-  /* ━━━ Semantic UI ━━━ */
-  --theme-selected-background: var(--dracula-current-line) !important;
-  --theme-checkbox-background: var(--dracula-current-line) !important;
-  --theme-panel-background: rgba(68, 71, 90, 0.35) !important;
-  --theme-ruleview-source-color: var(--dracula-comment) !important;
-  --theme-frame-link-color: var(--dracula-comment) !important;
-  --theme-ruleview-highlight: rgba(139, 233, 253, 0.2) !important;
-  --theme-message-border-color: rgba(98, 114, 164, 0.5) !important;
-  --theme-network-outline: rgba(98, 114, 164, 0.6) !important;
-  --theme-message-repeats-bg: var(--dracula-purple) !important;
-  --theme-message-repeats-color: var(--dracula-background) !important;
-  --theme-twisty-opacity: 0.5 !important;
+   /* ━━━ Semantic UI ━━━ */
+   --theme-selected-background:       var(--dracula-current-line) !important;
+   --theme-checkbox-background:       var(--dracula-current-line) !important;
+   --theme-panel-background:          rgba(68, 71, 90, 0.35) !important;
+   --theme-ruleview-source-color:     var(--dracula-comment) !important;
+   --theme-frame-link-color:          var(--dracula-comment) !important;
+   --theme-ruleview-highlight:        rgba(139, 233, 253, 0.2) !important;
+   --theme-message-border-color:      rgba(98, 114, 164, 0.5) !important;
+   --theme-network-outline:           rgba(98, 114, 164, 0.6) !important;
+   --theme-message-repeats-bg:        var(--dracula-purple) !important;
+   --theme-message-repeats-color:     var(--dracula-background) !important;
+   --theme-twisty-opacity:            0.5 !important;
 
-  /* ━━━ Console Messages ━━━ */
-  --console-error-color: var(--dracula-bright-red) !important;
-  --console-error-border: rgba(255, 85, 85, 0.4) !important;
-  --console-error-background: rgba(255, 85, 85, 0.1) !important;
-  --theme-icon-error-color: var(--dracula-red) !important;
+   /* ━━━ Console Messages ━━━ */
+   --console-error-color:             var(--dracula-bright-red) !important;
+   --console-error-border:            rgba(255, 85, 85, 0.4) !important;
+   --console-error-background:        rgba(255, 85, 85, 0.1) !important;
+   --theme-icon-error-color:          var(--dracula-red) !important;
 
-  --console-warning-color: var(--dracula-bright-yellow) !important;
-  --console-warning-border: rgba(255, 184, 108, 0.4) !important;
-  --console-warning-background: rgba(255, 184, 108, 0.1) !important;
-  --theme-icon-warning-color: var(--dracula-orange) !important;
+   --console-warning-color:           var(--dracula-bright-yellow) !important;
+   --console-warning-border:          rgba(255, 184, 108, 0.4) !important;
+   --console-warning-background:      rgba(255, 184, 108, 0.1) !important;
+   --theme-icon-warning-color:        var(--dracula-orange) !important;
+
+   /* ━━━ Network Status Codes ━━━
+      Text is always --theme-body-background (dark bg for contrast).
+      Pick pill bg colors that are vivid enough to read against it.
+   ━━━ */
+   /* 1xx – Informational: muted blue-grey */
+   --status-code-color-1xx:              var(--dracula-comment) !important;
+
+   /* 2xx – Success: bright green, clearly good */
+   --status-code-color-2xx:              var(--dracula-green) !important;
+
+   /* 3xx – Redirect / cached: cyan, neutral-informative */
+   --status-code-color-redirect-or-cache: var(--dracula-cyan) !important;
+
+   /* 4xx – Client Error: orange, bad but not catastrophic */
+   --status-code-color-4xx:              var(--dracula-orange) !important;
+
+   /* 5xx – Server Error: red, critical */
+   --status-code-color-5xx:              var(--dracula-red) !important;
 }
 
 /* ━━━ LIGHT ━━━
@@ -114,63 +133,70 @@
    shifted darker for readability on light surfaces.
 ━━━ */
 :root.theme-light {
-  --theme-tab-toolbar-background: #e9e9f0 !important;
-  --theme-toolbar-background: #f0f0f5 !important;
-  --theme-selection-color: #282a36 !important;
-  --theme-splitter-color: rgba(68, 71, 90, 0.2) !important;
-  --theme-comment: #6272a4 !important;
+   --theme-tab-toolbar-background:    #e9e9f0 !important;
+   --theme-toolbar-background:        #f0f0f5 !important;
+   --theme-selection-color:           #282a36 !important;
+   --theme-splitter-color:            rgba(68, 71, 90, 0.2) !important;
+   --theme-comment:                   #6272a4 !important;
 
-  --test-theme-body-background: #f8f8f5 !important;
-  --theme-sidebar-background: #f2f2f7 !important;
-  --theme-body-background: #f8f8f5 !important;
+   --test-theme-body-background:      #f8f8f5 !important;
+   --theme-sidebar-background:        #f2f2f7 !important;
+   --theme-body-background:           #f8f8f5 !important;
 
-  --theme-body-color: #282a36 !important;
-  --theme-body-color-alt: #21222c !important;
-  --theme-content-color1: #21222c !important;
-  --theme-content-color2: #44475a !important;
-  --theme-content-color3: #6272a4 !important;
+   --theme-body-color:                #282a36 !important;
+   --theme-body-color-alt:            #21222c !important;
+   --theme-content-color1:            #21222c !important;
+   --theme-content-color2:            #44475a !important;
+   --theme-content-color3:            #6272a4 !important;
 
-  --theme-selection-background: rgba(189, 147, 249, 0.15) !important;
-  --theme-focus-outline-color: rgba(189, 147, 249, 0.35) !important;
-  --theme-toolbar-hover: rgba(98, 114, 164, 0.12) !important;
-  --theme-toolbar-active: rgba(98, 114, 164, 0.22) !important;
-  --theme-togglebutton-active: rgba(98, 114, 164, 0.16) !important;
+   --theme-selection-background:      rgba(189, 147, 249, 0.15) !important;
+   --theme-focus-outline-color:       rgba(189, 147, 249, 0.35) !important;
+   --theme-toolbar-hover:             rgba(98, 114, 164, 0.12) !important;
+   --theme-toolbar-active:            rgba(98, 114, 164, 0.22) !important;
+   --theme-togglebutton-active:       rgba(98, 114, 164, 0.16) !important;
 
-  /* ━━━ Syntax Highlighting (darkened for light bg) ━━━ */
-  --theme-highlight-blue: #0097b2 !important;
-  --theme-highlight-purple: #7b5ea7 !important;
-  --theme-highlight-pink: #c44d8d !important;
-  --theme-highlight-red: #cc3333 !important;
-  --theme-highlight-orange: #c97b2a !important;
-  --theme-highlight-lightorange: #b89a00 !important;
-  --theme-highlight-green: #277a3a !important;
-  --theme-highlight-bluegrey: #0085a1 !important;
-  --theme-highlight-yellow: #9a8c00 !important;
+   /* ━━━ Syntax Highlighting (darkened for light bg) ━━━ */
+   --theme-highlight-blue:            #0097b2 !important;
+   --theme-highlight-purple:          #7b5ea7 !important;
+   --theme-highlight-pink:            #c44d8d !important;
+   --theme-highlight-red:             #cc3333 !important;
+   --theme-highlight-orange:          #c97b2a !important;
+   --theme-highlight-lightorange:     #b89a00 !important;
+   --theme-highlight-green:           #277a3a !important;
+   --theme-highlight-bluegrey:        #0085a1 !important;
+   --theme-highlight-yellow:          #9a8c00 !important;
 
-  /* ━━━ Semantic UI ━━━ */
-  --theme-selected-background: #e4e4ef !important;
-  --theme-checkbox-background: #ebebf5 !important;
-  --theme-panel-background: rgba(209, 209, 230, 0.4) !important;
-  --theme-ruleview-source-color: #6272a4bd !important;
-  --theme-frame-link-color: #6272a4 !important;
-  --theme-ruleview-highlight: rgba(0, 151, 178, 0.15) !important;
-  --theme-message-border-color: rgba(98, 114, 164, 0.3) !important;
-  --theme-network-outline: rgba(98, 114, 164, 0.5) !important;
-  --theme-message-repeats-bg: #7b5ea7 !important;
-  --theme-message-repeats-color: #ffffff !important;
-  --theme-twisty-opacity: 0.5 !important;
+   /* ━━━ Semantic UI ━━━ */
+   --theme-selected-background:       #e4e4ef !important;
+   --theme-checkbox-background:       #ebebf5 !important;
+   --theme-panel-background:          rgba(209, 209, 230, 0.4) !important;
+   --theme-ruleview-source-color:     #6272a4bd !important;
+   --theme-frame-link-color:          #6272a4 !important;
+   --theme-ruleview-highlight:        rgba(0, 151, 178, 0.15) !important;
+   --theme-message-border-color:      rgba(98, 114, 164, 0.3) !important;
+   --theme-network-outline:           rgba(98, 114, 164, 0.5) !important;
+   --theme-message-repeats-bg:        #7b5ea7 !important;
+   --theme-message-repeats-color:     #ffffff !important;
+   --theme-twisty-opacity:            0.5 !important;
 
-  /* ━━━ Console Messages ━━━ */
-  --console-error-color: #b02020 !important;
-  --console-error-border: rgba(176, 32, 32, 0.35) !important;
-  --console-error-background: rgba(176, 32, 32, 0.07) !important;
-  --theme-icon-error-color: #b02020 !important;
+   /* ━━━ Console Messages ━━━ */
+   --console-error-color:             #b02020 !important;
+   --console-error-border:            rgba(176, 32, 32, 0.35) !important;
+   --console-error-background:        rgba(176, 32, 32, 0.07) !important;
+   --theme-icon-error-color:          #b02020 !important;
 
-  --console-warning-color: #8a5500 !important;
-  --console-warning-border: rgba(201, 123, 42, 0.35) !important;
-  --console-warning-background: rgba(201, 123, 42, 0.07) !important;
-  --theme-icon-warning-color: #8a5500 !important;
+   --console-warning-color:           #8a5500 !important;
+   --console-warning-border:          rgba(201, 123, 42, 0.35) !important;
+   --console-warning-background:      rgba(201, 123, 42, 0.07) !important;
+   --theme-icon-warning-color:        #8a5500 !important;
 
-  --console-error-glow: 0 0 14px rgba(176, 32, 32, 0.2);
-  --console-warning-glow: 0 0 14px rgba(201, 123, 42, 0.2);
+   --console-error-glow:              0 0 14px rgba(176, 32, 32, 0.2);
+   --console-warning-glow:            0 0 14px rgba(201, 123, 42, 0.2);
+
+   /* ━━━ Network Status Codes ━━━ */
+   --status-code-color-1xx:              #6272a4 !important;
+   --status-code-color-2xx:              #277a3a !important;
+   --status-code-color-redirect-or-cache: #0085a1 !important;
+   --status-code-color-4xx:              #c97b2a !important;
+   --status-code-color-5xx:              #cc3333 !important;
 }

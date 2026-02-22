@@ -90,7 +90,6 @@
       transform: scaleX(0);
       opacity: 0;
    }
-
    to {
       transform: scaleX(1);
       opacity: 1;
@@ -251,7 +250,6 @@
       opacity: 0;
       transform: translateX(-8px);
    }
-
    to {
       opacity: 1;
       transform: translateX(0);
@@ -310,6 +308,17 @@
    height: 350px !important;
 }
 
+/* ━━━ Status Code Colors ━━━
+   Firefox drives pill colors entirely through these built-in vars:
+     --status-code-color-1xx
+     --status-code-color-2xx
+     --status-code-color-redirect-or-cache  (3xx + "cached")
+     --status-code-color-4xx
+     --status-code-color-5xx
+   Text color is always --theme-body-background (dark bg as contrast).
+   No selectors needed — just set the vars in your theme file.
+━━━ */
+
 /* ═══════════════════════════════════════════════════════════════
    INSPECTOR & RULES VIEW
    ═══════════════════════════════════════════════════════════════ */
@@ -333,7 +342,7 @@
    background-color: var(--theme-ruleview-highlight) !important;
 }
 
-.stylesheet-system.splitview-nav>li.splitview-active {
+.stylesheet-system.splitview-nav > li.splitview-active {
    background-color: var(--theme-toolbar-active) !important;
 }
 
@@ -354,11 +363,11 @@
    opacity: 0;
 }
 
-.split-box.vert>.splitter {
+.split-box.vert > .splitter {
    min-width: 10px !important;
 }
 
-.split-box.horz>.splitter {
+.split-box.horz > .splitter {
    min-height: 10px !important;
 }
 
@@ -382,7 +391,6 @@
       opacity: 0;
       transform: translateY(5px);
    }
-
    to {
       opacity: 1;
       transform: translateY(0);
@@ -445,7 +453,6 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-
    *,
    *::before,
    *::after {
