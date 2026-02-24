@@ -1,0 +1,120 @@
+/* ═══════════════════════════════════════════════════════════════
+   DEVTOOLS THEME: Learn with Sumit (LWS)
+   "Peace of the eye" & "Simple as light"
+   Pair with: @import url('./themes/theme-lws.css');
+   ═══════════════════════════════════════════════════════════════ */
+
+:root {
+  /* ━━━ LWS Dark (Peace of the Eye) ━━━ */
+  --lws-d-bg: #122033;
+  --lws-d-surface: #101c2c;
+  --lws-d-fg: rgba(255, 255, 255, 0.8);
+  --lws-d-accent: #989eb3;
+  --lws-d-keyword: #ffd866;
+  --lws-d-func: #78dce8;
+  --lws-d-string: #2ecfa8;
+  --lws-d-var: #ff6188;
+  --lws-d-comment: #868d9caa;
+
+  /* ━━━ LWS Light (Simple as Light) ━━━ */
+  --lws-l-bg: #ffffff;
+  --lws-l-surface: #f3f6f6;
+  --lws-l-fg: #455059;
+  --lws-l-accent: #3398DB;
+  --lws-l-keyword: #c9a022;
+  --lws-l-func: #3398DB;
+  --lws-l-string: #37ae6f;
+  --lws-l-var: #de456b;
+  --lws-l-comment: #8b99a7aa;
+}
+
+/* ━━━ LWS DARK ━━━ */
+:root.theme-dark {
+  --theme-tab-toolbar-background: var(--lws-d-surface) !important;
+  --theme-toolbar-background: var(--lws-d-bg) !important;
+  --theme-selection-color: #ffffff !important;
+  --theme-splitter-color: rgba(14, 14, 18, 0.5) !important;
+  --theme-comment: var(--lws-d-comment) !important;
+
+  --theme-sidebar-background: var(--lws-d-surface) !important;
+  --theme-body-background: var(--lws-d-bg) !important;
+
+  --theme-body-color: var(--lws-d-fg) !important;
+  --theme-body-color-alt: #989eb3 !important;
+  --theme-content-color1: var(--lws-d-fg) !important;
+  --theme-content-color2: #868d9c !important;
+  --theme-content-color3: var(--lws-d-comment) !important;
+
+  --theme-selection-background: rgba(152, 158, 179, 0.3) !important;
+  --theme-focus-outline-color: rgba(152, 158, 179, 0.4) !important;
+  --theme-toolbar-hover: rgba(14, 14, 18, 0.37) !important;
+  --theme-toolbar-active: rgba(152, 158, 179, 0.3) !important;
+  --theme-togglebutton-active: rgba(82, 215, 148, 0.4) !important;
+
+  /* Syntax Highlighting */
+  --theme-highlight-blue: var(--lws-d-func) !important;
+  /* Tags/Elements */
+  --theme-highlight-purple: #ab9df2 !important;
+  /* Props/Classes */
+  --theme-highlight-pink: #fc9867 !important;
+  /* Numbers/Constants */
+  --theme-highlight-red: var(--lws-d-string) !important;
+  /* Strings */
+  --theme-highlight-orange: var(--lws-d-keyword) !important;
+  /* Keywords */
+  --theme-highlight-lightorange: var(--lws-d-var) !important;
+  /* Variables */
+  --theme-highlight-green: var(--lws-d-comment) !important;
+  /* Comments */
+  --theme-highlight-bluegrey: #868d9c !important;
+  /* Punctuation */
+  --theme-highlight-yellow: #E35535 !important;
+  /* Errors */
+
+  /* Console Messages */
+  --console-error-color: #fc6a67 !important;
+  --console-error-border: rgba(227, 85, 53, 0.3) !important;
+  --console-error-background: rgba(227, 85, 53, 0.1) !important;
+  --theme-icon-error-color: #E35535 !important;
+}
+
+/* ━━━ LWS LIGHT ━━━ */
+:root.theme-light {
+  --theme-tab-toolbar-background: var(--lws-l-surface) !important;
+  --theme-toolbar-background: var(--lws-l-bg) !important;
+  --theme-selection-color: var(--lws-l-fg) !important;
+  --theme-splitter-color: #d1dadc !important;
+  --theme-comment: var(--lws-l-comment) !important;
+
+  --theme-sidebar-background: var(--lws-l-surface) !important;
+  --theme-body-background: var(--lws-l-bg) !important;
+
+  --theme-body-color: var(--lws-l-fg) !important;
+  --theme-body-color-alt: #8b99a7 !important;
+  --theme-content-color1: var(--lws-l-fg) !important;
+  --theme-content-color2: #455059 !important;
+  --theme-content-color3: var(--lws-l-comment) !important;
+
+  --theme-selection-background: rgba(51, 152, 219, 0.2) !important;
+  --theme-focus-outline-color: rgba(51, 152, 219, 0.3) !important;
+  --theme-toolbar-hover: rgba(209, 218, 220, 0.4) !important;
+  --theme-toolbar-active: rgba(51, 152, 219, 0.25) !important;
+  --theme-togglebutton-active: rgba(51, 152, 219, 0.3) !important;
+
+  /* Syntax Highlighting */
+  --theme-highlight-blue: var(--lws-l-func) !important;
+  --theme-highlight-purple: #935cd1 !important;
+  --theme-highlight-pink: #D26D32 !important;
+  --theme-highlight-red: var(--lws-l-string) !important;
+  --theme-highlight-orange: var(--lws-l-keyword) !important;
+  --theme-highlight-lightorange: var(--lws-l-var) !important;
+  --theme-highlight-green: var(--lws-l-comment) !important;
+  --theme-highlight-bluegrey: #8b99a7 !important;
+  --theme-highlight-yellow: #C13838 !important;
+
+  /* Console Messages */
+  --console-error-color: #C13838 !important;
+  --console-error-border: rgba(193, 56, 56, 0.25) !important;
+  --console-error-background: rgba(193, 56, 56, 0.05) !important;
+  --theme-icon-error-color: #C13838 !important;
+}

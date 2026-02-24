@@ -1,0 +1,120 @@
+/* ═══════════════════════════════════════════════════════════════
+   DEVTOOLS THEME: Ayu (Dark & Light)
+   Based on the official Ayu palette.
+   Pair with: @import url('./themes/theme-ayu.css');
+   ═══════════════════════════════════════════════════════════════ */
+
+:root {
+  /* ━━━ Ayu Dark Palette ━━━ */
+  --ayu-d-bg: #0d1017;
+  --ayu-d-fg: #bfbdb6;
+  --ayu-d-accent: #e6b450;
+  --ayu-d-comment: #5a6673;
+  --ayu-d-keyword: #ff8f40;
+  --ayu-d-string: #aad94c;
+  --ayu-d-entity: #59c2ff;
+  --ayu-d-func: #ffb454;
+  --ayu-d-error: #d95757;
+
+  /* ━━━ Ayu Light Palette ━━━ */
+  --ayu-l-bg: #f8f9fa;
+  --ayu-l-fg: #5c6166;
+  --ayu-l-accent: #f29718;
+  --ayu-l-comment: #adaeb1;
+  --ayu-l-keyword: #fa8532;
+  --ayu-l-string: #86b300;
+  --ayu-l-entity: #22a4e6;
+  --ayu-l-func: #eba400;
+  --ayu-l-error: #e65050;
+}
+
+/* ━━━ AYU DARK ━━━ */
+:root.theme-dark {
+  --theme-tab-toolbar-background: #0d1017 !important;
+  --theme-toolbar-background: #10141c !important;
+  --theme-selection-color: var(--ayu-d-fg) !important;
+  --theme-splitter-color: #1b1f29 !important;
+  --theme-comment: var(--ayu-d-comment) !important;
+
+  --theme-sidebar-background: #0d1017 !important;
+  --theme-body-background: #0d1017 !important;
+
+  --theme-body-color: var(--ayu-d-fg) !important;
+  --theme-body-color-alt: #5a6378 !important;
+  --theme-content-color1: var(--ayu-d-fg) !important;
+  --theme-content-color2: #697184 !important;
+  --theme-content-color3: var(--ayu-d-comment) !important;
+
+  --theme-selection-background: rgba(51, 136, 255, 0.25) !important;
+  --theme-focus-outline-color: rgba(230, 180, 80, 0.4) !important;
+  --theme-toolbar-hover: rgba(71, 82, 102, 0.25) !important;
+  --theme-toolbar-active: rgba(71, 82, 102, 0.4) !important;
+  --theme-togglebutton-active: #e6b45033 !important;
+
+  /* Syntax Highlighting */
+  --theme-highlight-blue: var(--ayu-d-entity) !important;
+  /* Tags */
+  --theme-highlight-purple: #39bae6 !important;
+  /* Properties */
+  --theme-highlight-pink: #d2a6ff !important;
+  /* Numbers */
+  --theme-highlight-red: var(--ayu-d-string) !important;
+  /* Strings */
+  --theme-highlight-orange: var(--ayu-d-keyword) !important;
+  /* Keywords */
+  --theme-highlight-lightorange: var(--ayu-d-func) !important;
+  /* Functions */
+  --theme-highlight-green: var(--ayu-d-comment) !important;
+  /* Comments */
+  --theme-highlight-bluegrey: #95e6cb !important;
+  /* Regex/Attrs */
+  --theme-highlight-yellow: var(--ayu-d-error) !important;
+  /* Errors */
+
+  /* Console Messages */
+  --console-error-color: var(--ayu-d-error) !important;
+  --console-error-border: rgba(217, 87, 87, 0.3) !important;
+  --console-error-background: rgba(217, 87, 87, 0.08) !important;
+  --theme-icon-error-color: var(--ayu-d-error) !important;
+}
+
+/* ━━━ AYU LIGHT ━━━ */
+:root.theme-light {
+  --theme-tab-toolbar-background: #f8f9fa !important;
+  --theme-toolbar-background: #fcfcfc !important;
+  --theme-selection-color: var(--ayu-l-fg) !important;
+  --theme-splitter-color: #6b7d8f1f !important;
+  --theme-comment: var(--ayu-l-comment) !important;
+
+  --theme-sidebar-background: #f8f9fa !important;
+  --theme-body-background: #f8f9fa !important;
+
+  --theme-body-color: var(--ayu-l-fg) !important;
+  --theme-body-color-alt: #828e9f !important;
+  --theme-content-color1: var(--ayu-l-fg) !important;
+  --theme-content-color2: #788597 !important;
+  --theme-content-color3: var(--ayu-l-comment) !important;
+
+  --theme-selection-background: rgba(3, 91, 214, 0.1) !important;
+  --theme-focus-outline-color: rgba(242, 151, 24, 0.3) !important;
+  --theme-toolbar-hover: rgba(107, 125, 143, 0.1) !important;
+  --theme-toolbar-active: rgba(107, 125, 143, 0.2) !important;
+  --theme-togglebutton-active: #f297181a !important;
+
+  /* Syntax Highlighting */
+  --theme-highlight-blue: var(--ayu-l-entity) !important;
+  --theme-highlight-purple: #55b4d4 !important;
+  --theme-highlight-pink: #a37acc !important;
+  --theme-highlight-red: var(--ayu-l-string) !important;
+  --theme-highlight-orange: var(--ayu-l-keyword) !important;
+  --theme-highlight-lightorange: var(--ayu-l-func) !important;
+  --theme-highlight-green: var(--ayu-l-comment) !important;
+  --theme-highlight-bluegrey: #4cbf99 !important;
+  --theme-highlight-yellow: var(--ayu-l-error) !important;
+
+  /* Console Messages */
+  --console-error-color: var(--ayu-l-error) !important;
+  --console-error-border: rgba(230, 80, 80, 0.3) !important;
+  --console-error-background: rgba(230, 80, 80, 0.05) !important;
+  --theme-icon-error-color: var(--ayu-l-error) !important;
+}

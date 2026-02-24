@@ -1,0 +1,97 @@
+/* ═══════════════════════════════════════════════════════════════
+   DEVTOOLS THEME: Cyberpunk 2077
+   A high-contrast, neon-drenched theme based on the 2077 palette.
+   Pair with: @import url('./themes/theme-cyberpunk2077.css');
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ━━━ 2077 Palette ━━━ */
+:root {
+  --cp-bg: #030d22;
+  /* Deep Navy */
+  --cp-surface: #0b162d;
+  /* Elevated Surface */
+  --cp-selection: rgba(250, 13, 234, 0.25);
+  /* Progress bar pink */
+
+  --cp-yellow: #ffd400;
+  /* Numbers / Attributes */
+  --cp-cyan: #0ef3ff;
+  /* Strings / Storage */
+  --cp-hotpink: #ff2e97;
+  /* Tags / Links / JSON Keys */
+  --cp-magenta: #ff2cf1;
+  /* Keywords */
+  --cp-blue: #39c0ff;
+  /* Functions / Constants */
+  --cp-deepblue: #0098df;
+  /* Comments */
+
+  --cp-fg: #fdfeff;
+  --cp-fg-dim: #8a9bb8;
+
+  /* ━━━ Console Glows ━━━ */
+  --console-error-glow: 0 0 15px rgba(255, 46, 151, 0.4);
+  --console-warning-glow: 0 0 15px rgba(255, 212, 0, 0.3);
+}
+
+/* ━━━ DARK MODE ━━━ */
+:root.theme-dark {
+  --theme-tab-toolbar-background: var(--cp-surface) !important;
+  --theme-toolbar-background: var(--cp-surface) !important;
+  --theme-selection-color: var(--cp-fg) !important;
+  --theme-splitter-color: #1a2a4a !important;
+  --theme-comment: var(--cp-deepblue) !important;
+
+  --theme-body-background: var(--cp-bg) !important;
+  --theme-sidebar-background: var(--cp-surface) !important;
+
+  --theme-body-color: var(--cp-fg) !important;
+  --theme-body-color-alt: var(--cp-fg-dim) !important;
+  --theme-content-color1: var(--cp-fg) !important;
+  --theme-content-color2: var(--cp-fg-dim) !important;
+
+  --theme-selection-background: var(--cp-selection) !important;
+  --theme-focus-outline-color: var(--cp-magenta) !important;
+  --theme-toolbar-hover: rgba(57, 192, 255, 0.1) !important;
+  --theme-toolbar-active: rgba(57, 192, 255, 0.2) !important;
+
+  /* ━━━ Syntax Highlighting ━━━ */
+  --theme-highlight-blue: var(--cp-hotpink) !important;
+  /* Tags / Selectors */
+  --theme-highlight-purple: var(--cp-cyan) !important;
+  /* CSS Properties */
+  --theme-highlight-pink: var(--cp-yellow) !important;
+  /* Numbers / Booleans */
+  --theme-highlight-red: var(--cp-cyan) !important;
+  /* Strings */
+  --theme-highlight-orange: var(--cp-magenta) !important;
+  /* Operators */
+  --theme-highlight-lightorange: var(--cp-yellow) !important;
+  /* Units */
+  --theme-highlight-green: var(--cp-deepblue) !important;
+  /* Comments */
+  --theme-highlight-bluegrey: var(--cp-blue) !important;
+  /* Attribute Names */
+  --theme-highlight-yellow: #ff1bf0 !important;
+  /* Errors / Storage Type */
+
+  /* ━━━ Semantic UI ━━━ */
+  --theme-selected-background: var(--cp-selection) !important;
+  --theme-panel-background: rgba(11, 22, 45, 0.6) !important;
+  --theme-ruleview-highlight: rgba(14, 243, 255, 0.15) !important;
+  --theme-message-repeats-bg: var(--cp-hotpink) !important;
+  --theme-message-repeats-color: var(--cp-bg) !important;
+
+  /* ━━━ Network Status Codes ━━━ */
+  --status-code-color-2xx: #00ff9d !important;
+  /* Cyberpunk Green */
+  --status-code-color-4xx: var(--cp-yellow) !important;
+  --status-code-color-5xx: var(--cp-hotpink) !important;
+}
+
+/* ━━━ LIGHT MODE FALLBACK ━━━ */
+:root.theme-light {
+  --theme-body-background: #f0f2f5 !important;
+  --theme-body-color: #030d22 !important;
+  /* Note: 2077 is inherently a dark theme; light mode uses system defaults */
+}
