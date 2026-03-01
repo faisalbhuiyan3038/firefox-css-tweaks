@@ -342,6 +342,20 @@
    background-color: var(--theme-ruleview-highlight) !important;
 }
 
+.ruleview-header {
+   background-color: var(--ruleview-header-background) !important;
+}
+
+.ruleview-expandable-header {
+  & button[aria-expanded] {
+    background-color: var(--ruleview-header-background) !important;
+  }
+}
+
+.accordion-header {
+  background-color: var(--ruleview-header-background) !important;
+}
+
 .stylesheet-system.splitview-nav > li.splitview-active {
    background-color: var(--theme-toolbar-active) !important;
 }

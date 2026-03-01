@@ -7,11 +7,11 @@
 
 /* ━━━ Dracula Palette ━━━ */
 :root {
-   --dracula-background:     #282a36;
+   --dracula-background:     #171C2A;
    --dracula-current-line:   #44475a;
    --dracula-foreground:     #f8f8f2;
    --dracula-comment:        #5cbaa9;
-   --dracula-black:          #21222c;
+   --dracula-black:          #171C2A;
 
    --dracula-cyan:           #8be9fd;
    --dracula-green:          #50fa7b;
@@ -29,6 +29,8 @@
    --dracula-bright-yellow:  #ffffa5;
 
    --dracula-console-text:   #ffc5c5;
+
+   --ruleview-header-color:  #242A3A;
 
    /* ━━━ Console Glows ━━━ */
    --console-error-glow:   0 0 16px rgba(255, 85, 85, 0.35);
@@ -97,6 +99,9 @@
    --theme-message-repeats-bg:        var(--dracula-purple) !important;
    --theme-message-repeats-color:     var(--dracula-background) !important;
    --theme-twisty-opacity:            0.5 !important;
+
+   /* ---- Ruleview Header ----- */
+   --ruleview-header-background:     var(--ruleview-header-color) !important;
 
    /* ━━━ Console Messages ━━━ */
    --console-error-color:             var(--dracula-console-text) !important;
