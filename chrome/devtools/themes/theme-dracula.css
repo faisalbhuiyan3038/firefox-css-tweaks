@@ -10,13 +10,13 @@
    --dracula-background:     #282a36;
    --dracula-current-line:   #44475a;
    --dracula-foreground:     #f8f8f2;
-   --dracula-comment:        #6272a4;
+   --dracula-comment:        #5cbaa9;
    --dracula-black:          #21222c;
 
    --dracula-cyan:           #8be9fd;
    --dracula-green:          #50fa7b;
    --dracula-orange:         #ffb86c;
-   --dracula-pink:           #ff79c6;
+   --dracula-pink:           #FF79C6;
    --dracula-purple:         #bd93f9;
    --dracula-red:            #ff5555;
    --dracula-yellow:         #f1fa8c;
@@ -27,6 +27,8 @@
    --dracula-bright-purple:  #ff92df;
    --dracula-bright-red:     #ff6e6e;
    --dracula-bright-yellow:  #ffffa5;
+
+   --dracula-console-text:   #ffc5c5;
 
    /* ━━━ Console Glows ━━━ */
    --console-error-glow:   0 0 16px rgba(255, 85, 85, 0.35);
@@ -97,7 +99,7 @@
    --theme-twisty-opacity:            0.5 !important;
 
    /* ━━━ Console Messages ━━━ */
-   --console-error-color:             var(--dracula-bright-red) !important;
+   --console-error-color:             var(--dracula-console-text) !important;
    --console-error-border:            rgba(255, 85, 85, 0.4) !important;
    --console-error-background:        rgba(255, 85, 85, 0.1) !important;
    --theme-icon-error-color:          var(--dracula-red) !important;
@@ -118,7 +120,7 @@
    --status-code-color-2xx:              var(--dracula-green) !important;
 
    /* 3xx – Redirect / cached: cyan, neutral-informative */
-   --status-code-color-redirect-or-cache: var(--dracula-cyan) !important;
+   /* --status-code-color-redirect-or-cache: var(--dracula-cyan) !important; */
 
    /* 4xx – Client Error: orange, bad but not catastrophic */
    --status-code-color-4xx:              var(--dracula-orange) !important;
@@ -196,7 +198,7 @@
    /* ━━━ Network Status Codes ━━━ */
    --status-code-color-1xx:              #6272a4 !important;
    --status-code-color-2xx:              #277a3a !important;
-   --status-code-color-redirect-or-cache: #0085a1 !important;
+   /* --status-code-color-redirect-or-cache: #0085a1 !important; */
    --status-code-color-4xx:              #c97b2a !important;
    --status-code-color-5xx:              #cc3333 !important;
 }

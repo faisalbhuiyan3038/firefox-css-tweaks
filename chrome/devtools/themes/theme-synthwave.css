@@ -93,7 +93,7 @@
    ━━━ */
    --status-code-color-1xx:              var(--sw-fg-dim) !important;
    --status-code-color-2xx:              var(--sw-green) !important;
-   --status-code-color-redirect-or-cache: var(--sw-cyan) !important;
+   /* --status-code-color-redirect-or-cache: var(--sw-cyan) !important; */
    --status-code-color-4xx:              var(--sw-orange) !important;
    --status-code-color-5xx:              var(--sw-pink) !important;
 }
@@ -167,7 +167,7 @@
    /* ━━━ Network Status Codes ━━━ */
    --status-code-color-1xx:              #7c3aed !important;
    --status-code-color-2xx:              #1b5e20 !important;
-   --status-code-color-redirect-or-cache: #0077cc !important;
+   /* --status-code-color-redirect-or-cache: #0077cc !important; */
    --status-code-color-4xx:              #e65100 !important;
    --status-code-color-5xx:              #c2185b !important;
 }
