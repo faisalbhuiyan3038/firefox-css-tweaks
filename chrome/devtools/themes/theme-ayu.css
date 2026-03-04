@@ -11,10 +11,12 @@
   --ayu-d-accent: #e6b450;
   --ayu-d-comment: #5a6673;
   --ayu-d-keyword: #ff8f40;
-  --ayu-d-string: #aad94c;
+  --ayu-d-string: #FFB454;
   --ayu-d-entity: #59c2ff;
   --ayu-d-func: #ffb454;
   --ayu-d-error: #d95757;
+  --ayu-theme-purple: #9CD93B;
+  --ayu-js-var-or-property: #AAD93B;
 
   /* ━━━ Ayu Light Palette ━━━ */
   --ayu-l-bg: #f8f9fa;
@@ -54,7 +56,7 @@
   /* Syntax Highlighting */
   --theme-highlight-blue: var(--ayu-d-entity) !important;
   /* Tags */
-  --theme-highlight-purple: #39bae6 !important;
+  --theme-highlight-purple: var(--ayu-theme-purple) !important;
   /* Properties */
   --theme-highlight-pink: #d2a6ff !important;
   /* Numbers */
@@ -71,11 +73,20 @@
   --theme-highlight-yellow: var(--ayu-d-error) !important;
   /* Errors */
 
+  --js-var-or-property: var(--ayu-js-var-or-property) !important;
+
+  --theme-selected-background: #BFBDB62B !important;
+
   /* Console Messages */
   --console-error-color: var(--ayu-d-error) !important;
   --console-error-border: rgba(217, 87, 87, 0.3) !important;
   --console-error-background: rgba(217, 87, 87, 0.08) !important;
   --theme-icon-error-color: var(--ayu-d-error) !important;
+
+  --status-code-color-1xx: var(--ayu-d-comment) !important;
+  --status-code-color-2xx: #3C9D45 !important;
+  --status-code-color-4xx: var(--ayu-d-keyword) !important;
+  --status-code-color-5xx: var(--ayu-d-error) !important;
 }
 
 /* ━━━ AYU LIGHT ━━━ */

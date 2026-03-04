@@ -1,0 +1,135 @@
+/* ═══════════════════════════════════════════════════════════════
+   DEVTOOLS THEME: One Monokai
+   A fusion of One Dark's UI and Monokai's vibrant syntax.
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ━━━ One Monokai Palette ━━━ */
+:root {
+   --monokai-bg:             #2D323B;
+   --monokai-bg-darker:      #23282E;
+   --monokai-bg-light:       #343C45;
+   --monokai-current-line:   #3E4451;
+   --monokai-selection:      #5C6679;
+   --monokai-foreground:     #BCD3E7;
+   --monokai-comment:        #5C6773;
+
+   --monokai-cyan:           #70E1E8;
+   --monokai-green:          #A1C983;
+   --monokai-orange:         #D96629;
+   --monokai-pink:           #DF80FF;
+   --monokai-purple:         #B084EB;
+   --monokai-red:            #E47780;
+   --monokai-yellow:         #E8C786;
+
+   --monokai-bright-yellow:  #FFFFB4;
+   --monokai-bright-orange:  #D99B28;
+   
+   --ruleview-header-color:  #1E2227;
+
+   /* ━━━ Console Glows ━━━ */
+   --console-error-glow:   0 0 16px rgba(228, 119, 128, 0.3);
+   --console-warning-glow: 0 0 16px rgba(217, 155, 40, 0.3);
+}
+
+/* ━━━ DARK ━━━ */
+:root.theme-dark {
+   --theme-tab-toolbar-background:    #252C33 !important;
+   --theme-toolbar-background:        var(--monokai-bg-light) !important;
+   --theme-selection-color:           #F5F7FA !important;
+   --theme-splitter-color:            #000000 !important;
+   --theme-comment:                   var(--monokai-comment) !important;
+
+   --test-theme-body-background:      var(--monokai-bg-darker) !important;
+   --theme-sidebar-background:        var(--monokai-bg-darker) !important;
+   --theme-body-background:           var(--monokai-bg) !important;
+
+   --theme-body-color:                var(--monokai-foreground) !important;
+   --theme-body-color-alt:            #D7DDE6 !important;
+   --theme-content-color1:            var(--monokai-green) !important;
+   --theme-content-color2:            #B6CBDF !important;
+   --theme-content-color3:            #BCCFE0 !important;
+
+   --theme-selection-background:      var(--monokai-selection) !important;
+   --theme-focus-outline-color:       rgba(224, 128, 255, 0.4) !important;
+   --theme-toolbar-hover:             rgba(92, 102, 121, 0.5) !important;
+   --theme-toolbar-active:            rgba(92, 102, 121, 0.7) !important;
+   --theme-togglebutton-active:       var(--monokai-selection) !important;
+
+   /* ━━━ Syntax Highlighting ━━━ 
+      Mapping per your Dracula reference:
+      Blue  -> Tags (Red in Monokai)
+      Purple -> Props (Yellow in Monokai)
+      Pink   -> Numbers (Purple in Monokai)
+      Red    -> Strings (Green in Monokai)
+   */
+   --theme-highlight-blue:            var(--monokai-red) !important;
+   --theme-highlight-purple:          var(--monokai-yellow) !important;
+   --theme-highlight-pink:            var(--monokai-purple) !important;
+   --theme-highlight-red:             var(--monokai-green) !important;
+   --theme-highlight-orange:          var(--monokai-orange) !important;
+   --theme-highlight-lightorange:     var(--monokai-bright-orange) !important;
+   --theme-highlight-green:           var(--monokai-comment) !important;
+   --theme-highlight-bluegrey:        var(--monokai-yellow) !important;
+   --theme-highlight-yellow:          var(--monokai-bright-yellow) !important;
+
+   /* ━━━ Semantic UI ━━━ */
+   --theme-selected-background:       var(--monokai-selection) !important;
+   --theme-checkbox-background:       var(--monokai-bg-light) !important;
+   --theme-panel-background:          rgba(35, 40, 46, 0.5) !important;
+   --theme-ruleview-source-color:     var(--monokai-comment) !important;
+   --theme-frame-link-color:          var(--monokai-cyan) !important;
+   --theme-ruleview-highlight:        rgba(112, 225, 232, 0.15) !important;
+   --theme-message-border-color:      rgba(92, 102, 121, 0.4) !important;
+   --theme-network-outline:           rgba(92, 102, 121, 0.5) !important;
+   --theme-message-repeats-bg:        var(--monokai-pink) !important;
+   --theme-message-repeats-color:     var(--monokai-bg) !important;
+   --theme-twisty-opacity:            0.6 !important;
+
+   /* ---- Ruleview Header ----- */
+   --ruleview-header-background:      var(--ruleview-header-color) !important;
+
+   /* ━━━ Console Messages ━━━ */
+   --console-error-color:             #FFD5D5 !important;
+   --console-error-border:            rgba(228, 119, 128, 0.4) !important;
+   --console-error-background:        rgba(228, 119, 128, 0.08) !important;
+   --theme-icon-error-color:          var(--monokai-red) !important;
+
+   --console-warning-color:           var(--monokai-bright-yellow) !important;
+   --console-warning-border:          rgba(217, 155, 40, 0.4) !important;
+   --console-warning-background:      rgba(217, 155, 40, 0.08) !important;
+   --theme-icon-warning-color:        var(--monokai-bright-orange) !important;
+
+   /* ━━━ Network Status Codes ━━━ */
+   --status-code-color-1xx:              var(--monokai-comment) !important;
+   --status-code-color-2xx:              var(--monokai-green) !important;
+   --status-code-color-4xx:              var(--monokai-orange) !important;
+   --status-code-color-5xx:              var(--monokai-red) !important;
+}
+
+/* ━━━ LIGHT ━━━
+   One Monokai doesn't have a strict light mode, but we'll 
+   adapt the "One Light" aesthetic to keep it functional.
+━━━ */
+:root.theme-light {
+   --theme-tab-toolbar-background:    #EBEDF0 !important;
+   --theme-toolbar-background:        #F0F2F5 !important;
+   --theme-selection-color:           #23282E !important;
+   --theme-splitter-color:            rgba(0, 0, 0, 0.1) !important;
+   --theme-comment:                   #6A737D !important;
+
+   --theme-body-background:           #FAFBFC !important;
+   --theme-sidebar-background:        #F6F8FA !important;
+
+   --theme-body-color:                #24292E !important;
+   --theme-selection-background:      rgba(3, 102, 214, 0.1) !important;
+
+   /* Semantic UI Light */
+   --theme-highlight-blue:            #D73A49 !important; /* Red-ish */
+   --theme-highlight-purple:          #EAB700 !important; /* Yellow-ish */
+   --theme-highlight-pink:            #6F42C1 !important; /* Purple-ish */
+   --theme-highlight-red:             #22863A !important; /* Green-ish */
+   
+   --status-code-color-2xx:           #22863A !important;
+   --status-code-color-4xx:           #E36209 !important;
+   --status-code-color-5xx:           #D73A49 !important;
+}
