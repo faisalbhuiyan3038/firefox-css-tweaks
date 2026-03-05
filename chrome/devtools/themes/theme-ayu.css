@@ -30,7 +30,6 @@
   --ayu-l-error: #e65050;
 }
 
-/* ━━━ AYU DARK ━━━ */
 :root.theme-dark {
   --theme-tab-toolbar-background: #0d1017 !important;
   --theme-toolbar-background: #10141c !important;
@@ -71,7 +70,6 @@
   --theme-highlight-bluegrey: #95e6cb !important;
   /* Regex/Attrs */
   --theme-highlight-yellow: var(--ayu-d-error) !important;
-  /* Errors */
 
   --js-var-or-property: var(--ayu-js-var-or-property) !important;
 
@@ -83,13 +81,13 @@
   --console-error-background: rgba(217, 87, 87, 0.08) !important;
   --theme-icon-error-color: var(--ayu-d-error) !important;
 
+  /* Status Code Colors */
   --status-code-color-1xx: var(--ayu-d-comment) !important;
   --status-code-color-2xx: #3C9D45 !important;
   --status-code-color-4xx: var(--ayu-d-keyword) !important;
   --status-code-color-5xx: var(--ayu-d-error) !important;
 }
 
-/* ━━━ AYU LIGHT ━━━ */
 :root.theme-light {
   --theme-tab-toolbar-background: #f8f9fa !important;
   --theme-toolbar-background: #fcfcfc !important;

@@ -1,12 +1,14 @@
 /* ═══════════════════════════════════════════════════════════════
-   FIREFOX DEVTOOLS - ENHANCED THEME (REFINED)
+   FIREFOX DEVTOOLS - REFINED THEME
    Structure & animations only — no hardcoded colors.
    All colors live in your theme file (e.g. themes/theme-default.css)
    ═══════════════════════════════════════════════════════════════ */
 
 :root {
    /* ━━━ Typography ━━━ */
-   --theme-font-family: 'Monoid','Comic Code','Anonymous Pro','Source Code Pro','JetBrains Mono', 'SF Mono', Menlo, Monaco, monospace;
+   /* Can use Monoid, Comic Code for leisure, but not using it since its bad for debugging */
+   --theme-font-family: 'Source Code Pro', 'JetBrains Mono', 'SF Mono', Menlo, Monaco, monospace;
+   --theme-monospace-font-family: 'Source Code Pro', 'JetBrains Mono', 'SF Mono', Menlo, Monaco, monospace;
 
    /* ━━━ Animations & Transitions ━━━ */
    --theme-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -14,7 +16,7 @@
    --theme-duration-fast: 0.2s;
    --theme-duration-normal: 0.3s;
 
-   /* ━━━ Reduced Spacing (more compact) ━━━ */
+   /* ━━━ Reduced Spacing ━━━ */
    --theme-space-xs: 3px;
    --theme-space-sm: 6px;
 
@@ -90,6 +92,7 @@
       transform: scaleX(0);
       opacity: 0;
    }
+
    to {
       transform: scaleX(1);
       opacity: 1;
@@ -250,6 +253,7 @@
       opacity: 0;
       transform: translateX(-8px);
    }
+
    to {
       opacity: 1;
       transform: translateX(0);
@@ -308,17 +312,6 @@
    height: 350px !important;
 }
 
-/* ━━━ Status Code Colors ━━━
-   Firefox drives pill colors entirely through these built-in vars:
-     --status-code-color-1xx
-     --status-code-color-2xx
-     --status-code-color-redirect-or-cache  (3xx + "cached")
-     --status-code-color-4xx
-     --status-code-color-5xx
-   Text color is always --theme-body-background (dark bg as contrast).
-   No selectors needed — just set the vars in your theme file.
-━━━ */
-
 /* ═══════════════════════════════════════════════════════════════
    INSPECTOR & RULES VIEW
    ═══════════════════════════════════════════════════════════════ */
@@ -347,16 +340,16 @@
 }
 
 .ruleview-expandable-header {
-  & button[aria-expanded] {
-    background-color: var(--ruleview-header-background) !important;
-  }
+   & button[aria-expanded] {
+      background-color: var(--ruleview-header-background) !important;
+   }
 }
 
 .accordion-header {
-  background-color: var(--ruleview-header-background) !important;
+   background-color: var(--ruleview-header-background) !important;
 }
 
-.stylesheet-system.splitview-nav > li.splitview-active {
+.stylesheet-system.splitview-nav>li.splitview-active {
    background-color: var(--theme-toolbar-active) !important;
 }
 
@@ -377,11 +370,11 @@
    opacity: 0;
 }
 
-.split-box.vert > .splitter {
+.split-box.vert>.splitter {
    min-width: 10px !important;
 }
 
-.split-box.horz > .splitter {
+.split-box.horz>.splitter {
    min-height: 10px !important;
 }
 
@@ -405,6 +398,7 @@
       opacity: 0;
       transform: translateY(5px);
    }
+
    to {
       opacity: 1;
       transform: translateY(0);
@@ -467,6 +461,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+
    *,
    *::before,
    *::after {
@@ -483,7 +478,15 @@
 .variable-or-property .token-string,
 /* ------------------- */
 .CodeMirror-Tern-farg {
-  color: var(--js-var-or-property, initial) !important;
+   color: var(--js-var-or-property, initial) !important;
+}
+
+.devtools-monospace {
+   font-family: var(--theme-monospace-font-family) !important;
+}
+
+.webconsole-app .message.network .message-flex-body .message-body .url {
+   color: var(--webconsole-xhr-url-color, --theme-comment) !important;
 }
 
 /* ═══════════════════════════════════════════════════════════════

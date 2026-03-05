@@ -28,7 +28,6 @@
   --lws-l-comment: #8b99a7aa;
 }
 
-/* ━━━ LWS DARK ━━━ */
 :root.theme-dark {
   --theme-tab-toolbar-background: var(--lws-d-surface) !important;
   --theme-toolbar-background: var(--lws-d-bg) !important;
@@ -78,7 +77,6 @@
   --theme-icon-error-color: #E35535 !important;
 }
 
-/* ━━━ LWS LIGHT ━━━ */
 :root.theme-light {
   --theme-tab-toolbar-background: var(--lws-l-surface) !important;
   --theme-toolbar-background: var(--lws-l-bg) !important;

@@ -1,0 +1,129 @@
+/* ═══════════════════════════════════════════════════════════════
+   DEVTOOLS THEME: One Dark Pro (Source-Accurate)
+   Extracted from VS Code JSON definition
+   ═══════════════════════════════════════════════════════════════ */
+
+:root {
+   /* UI Colors */
+   --odp-editor-bg: #282c34;
+   --odp-sidebar-bg: #21252b;
+   --odp-hover-bg: #2c313a;
+   --odp-selection-bg: #67769660;
+   --odp-panel-border: #3e4452;
+   --odp-foreground: #abb2bf;
+   --odp-comment: #7f848e;
+
+   /* Syntax Colors */
+   --odp-red: #e06c75;
+   /* Tags, Deletions */
+   --odp-green: #98c379;
+   /* Strings, Insertions */
+   --odp-yellow: #e5c07b;
+   /* Classes, Types */
+   --odp-blue: #61afef;
+   /* Functions, Links */
+   --odp-purple: #c678dd;
+   /* Keywords, Operators */
+   --odp-cyan: #56b6c2;
+   /* CSS Props, Regex */
+   --odp-orange: #d19a66;
+   /* Numbers, Attributes */
+   --odp-error-red: #c24038;
+   /* editorError.foreground */
+
+   --ruleview-header-color: #181a1f;
+
+   --console-error-glow: 0 0 16px rgba(194, 64, 56, 0.35);
+   --console-warning-glow: 0 0 16px rgba(209, 154, 102, 0.35);
+}
+
+:root.theme-dark {
+   /* UI Layout */
+   --theme-tab-toolbar-background: var(--odp-sidebar-bg) !important;
+   --theme-toolbar-background: var(--odp-editor-bg) !important;
+   --theme-selection-color: #ffffff !important;
+   --theme-splitter-color: var(--odp-panel-border) !important;
+   --theme-comment: var(--odp-comment) !important;
+
+   --test-theme-body-background: var(--odp-sidebar-bg) !important;
+   --theme-sidebar-background: var(--odp-sidebar-bg) !important;
+   --theme-body-background: var(--odp-editor-bg) !important;
+
+   /* Typography */
+   --theme-body-color: var(--odp-foreground) !important;
+   --theme-body-color-alt: #828997 !important;
+   --theme-content-color1: var(--odp-blue) !important;
+   --theme-content-color2: #abb2bf !important;
+   --theme-content-color3: var(--odp-comment) !important;
+
+   /* Interaction */
+   --theme-selection-background: var(--odp-selection-bg) !important;
+   --theme-focus-outline-color: rgba(97, 175, 239, 0.5) !important;
+   --theme-toolbar-hover: var(--odp-hover-bg) !important;
+   --theme-toolbar-active: rgba(255, 255, 255, 0.1) !important;
+   --theme-togglebutton-active: var(--odp-panel-border) !important;
+
+   --theme-highlight-blue: var(--odp-red) !important;
+   /* HTML/XML Tags */
+   --theme-highlight-purple: var(--odp-cyan) !important;
+   /* CSS Properties */
+   --theme-highlight-pink: var(--odp-orange) !important;
+   /* Numbers/Booleans */
+   --theme-highlight-red: var(--odp-green) !important;
+   /* Strings */
+   --theme-highlight-orange: var(--odp-purple) !important;
+   /* Operators */
+   --theme-highlight-lightorange: var(--odp-yellow) !important;
+   /* Units/Keywords */
+   --theme-highlight-green: var(--odp-comment) !important;
+   /* Comments */
+   --theme-highlight-bluegrey: var(--odp-orange) !important;
+   /* Attributes */
+   --theme-highlight-yellow: var(--odp-error-red) !important;
+   /* Errors */
+
+   /* ━━━ Semantic UI ━━━ */
+   --theme-selected-background: var(--odp-hover-bg) !important;
+   --theme-checkbox-background: #1d1f23 !important;
+   /* input.background */
+   --theme-panel-background: rgba(33, 37, 43, 0.4) !important;
+   --theme-ruleview-source-color: var(--odp-cyan) !important;
+   --theme-frame-link-color: var(--odp-blue) !important;
+   --theme-ruleview-highlight: rgba(86, 182, 194, 0.2) !important;
+   --theme-message-border-color: var(--odp-panel-border) !important;
+   --theme-network-outline: rgba(75, 82, 99, 0.5) !important;
+   --theme-message-repeats-bg: var(--odp-purple) !important;
+   --theme-message-repeats-color: var(--odp-editor-bg) !important;
+   --theme-twisty-opacity: 0.8 !important;
+
+   /* ---- Ruleview Header ----- */
+   --ruleview-header-background: var(--ruleview-header-color) !important;
+
+   /* ━━━ Console Messages ━━━ */
+   --console-error-color: #e06c75 !important;
+   --console-error-border: rgba(194, 64, 56, 0.4) !important;
+   --console-error-background: rgba(194, 64, 56, 0.1) !important;
+   --theme-icon-error-color: var(--odp-error-red) !important;
+
+   --console-warning-color: var(--odp-yellow) !important;
+   --console-warning-border: rgba(209, 154, 102, 0.4) !important;
+   --console-warning-background: rgba(209, 154, 102, 0.1) !important;
+   --theme-icon-warning-color: var(--odp-orange) !important;
+
+   /* ━━━ Network Status Codes ━━━ */
+   --status-code-color-1xx: var(--odp-cyan) !important;
+   --status-code-color-2xx: var(--odp-green) !important;
+   --status-code-color-4xx: var(--odp-orange) !important;
+   --status-code-color-5xx: var(--odp-red) !important;
+}
+
+/* ━━━ LIGHT (Fallback to standard light) ━━━ */
+:root.theme-light {
+   --theme-tab-toolbar-background: #f3f3f3 !important;
+   --theme-toolbar-background: #ffffff !important;
+   --theme-selection-color: #24292e !important;
+   --theme-splitter-color: #e1e4e8 !important;
+   --theme-body-background: #ffffff !important;
+   --theme-sidebar-background: #f6f8fa !important;
+   --theme-body-color: #24292e !important;
+}

@@ -10,24 +10,26 @@ A **modern, accessible, and highly customizable** CSS theme for Firefox Develope
 
 ## ✨ Features
 
-### 🎭 **Dual Theme Support**
-- **Dark Mode**: Deep, comfortable colors with vibrant accents perfect for late-night coding
-- **Light Mode**: Clean, crisp interface optimized for daylight visibility
-- Both themes maintain WCAG AA accessibility standards
+### 🎨 **Visual Enhancements**
+- Gradient accent bars on active tabs
+- Ripple effects on button clicks
+- Console messages slide in with animations
+- Glow effects on errors/warnings
+- Improved hover states throughout
+- Animated wave goodbye on close button
+- Glassmorphism effects on selected elements
 
-### 🎬 **Fluid Animations**
+### 🎛 **Modular Theming System**
+- Multiple color themes available.
+- Each theme is self-contained and needs to be paired with `devtools-refined.css` to work.
+- Super easy to create your own theme by following the existing theme structure.
+
+### 🌊 **Fluid Animations**
 - Smooth transitions and micro-interactions throughout the interface
 - Tab switching with sliding accent bars
 - Ripple effects on buttons
 - Message slide-in animations in console
 - Configurable animation speeds (or disable completely)
-
-### 🎯 **Enhanced UX**
-- **Improved hover states** with depth and feedback
-- **Better visual hierarchy** through refined spacing and typography
-- **Glowing effects** on errors/warnings for instant recognition
-- **Custom scrollbars** that match the theme
-- **Glassmorphism effects** for modern UI depth
 
 ### ⚡ **Performance Optimized**
 - GPU-accelerated animations
@@ -59,9 +61,9 @@ A **modern, accessible, and highly customizable** CSS theme for Firefox Develope
    cd chrome
    ```
 
-3. **Copy the CSS file**:
-   - Save `devtools-enhanced.css` to the `chrome` folder
-   - Rename it to `userChrome.css` (or append its contents if the file exists)
+3. **Copy the css files**:
+   - Copy the contents of the `chrome` folder to your Firefox profile folder's `chrome` folder.
+   - Update the `userContent.css` to include 1 color theme import along with `devtools-refined.css` import.
 
 4. **Enable UserChrome.css in Firefox**:
    - Enter `about:config` in Firefox
@@ -69,17 +71,6 @@ A **modern, accessible, and highly customizable** CSS theme for Firefox Develope
    - Set it to `true`
 
 5. **Restart Firefox** and open DevTools (F12)
-
-### Method 2: Browser Toolbox (For Testing)
-
-1. Enable Browser Toolbox:
-   - `about:config` → set `devtools.chrome.enabled` to `true`
-   - `about:config` → set `devtools.debugger.remote-enabled` to `true`
-
-2. Open Browser Toolbox:
-   - Tools → Browser Tools → Browser Toolbox
-   - In the Style Editor tab, create a new stylesheet
-   - Paste the contents of `devtools-enhanced.css`
 
 ---
 
@@ -102,16 +93,6 @@ Edit the CSS variables in the `:root.theme-dark` or `:root.theme-light` sections
    --theme-focus-outline-color: #1a73e8;
 }
 ```
-
-**Popular Accent Colors**:
-| Color    | Dark Theme | Light Theme |
-|----------|-----------|-------------|
-| 💙 Blue  | `#8ab4f8` | `#1a73e8`   |
-| 💜 Purple| `#c792ea` | `#7c3aed`   |
-| 💗 Pink  | `#ff7ac6` | `#db2777`   |
-| 💚 Green | `#73daca` | `#059669`   |
-| 🧡 Orange| `#ff9e64` | `#ea580c`   |
-| 💛 Yellow| `#ffc777` | `#ca8a04`   |
 
 ### 🔤 **Change Font**
 
@@ -211,11 +192,26 @@ This theme follows these principles:
 
 1. **Clarity Over Decoration**: Every visual effect serves a purpose
 2. **Consistency**: Unified spacing, colors, and interaction patterns
-3. **Accessibility First**: Works for everyone, including those with visual impairments
-4. **Performance Matters**: Smooth 60fps animations without jank
 5. **Extensibility**: Easy to customize via CSS variables
 
 ---
+
+--- 
+
+## Short Note
+- Variable names in Firefox devtools sound misleading. They map to token roles not colors. Here's a cheatsheet for understanding their impact.
+
+```js
+--theme-highlight-blue      → tag names, selectors       → Dracula PINK
+--theme-highlight-purple    → CSS property names         → Dracula YELLOW
+--theme-highlight-pink      → numbers, booleans          → Dracula PURPLE
+--theme-highlight-red       → strings, attribute values  → Dracula GREEN
+--theme-highlight-orange    → at-rules, operators        → Dracula ORANGE
+--theme-highlight-lightorange → units, keywords          → Dracula BRIGHT YELLOW
+--theme-highlight-green     → comments                   → Dracula COMMENT
+--theme-highlight-bluegrey  → attribute names, ids       → Dracula CYAN
+--theme-highlight-yellow    → errors, special tokens     → Dracula RED
+```
 
 ## 🐛 Troubleshooting
 
@@ -242,40 +238,6 @@ This theme follows these principles:
 ## 📝 Preferences.json
 
 The included `preferences.json` file documents all customizable properties. While it's primarily for documentation, you can use it as a reference when modifying the CSS variables.
-
-### Available Preferences:
-- **Font Family**: Monospace font stack
-- **Font Size**: Base text size (10-18px)
-- **Animation Speed**: Global speed multiplier
-- **Blur Effects**: Enable/disable glassmorphism
-- **Glow Effects**: Shadows on interactive elements
-- **Compact Mode**: Reduce spacing
-- **Accent Color**: Primary highlight color
-- **Border Radius**: UI element roundness
-- **Console Animations**: Animated console messages
-- **Custom Scrollbars**: Themed vs. system scrollbars
-
----
-
-## 🎬 What's New in v2.0
-
-### Major Changes:
-- ✨ Complete rewrite with modern CSS architecture
-- 🎨 New color system with improved contrast
-- ⚡ Performance optimizations (GPU acceleration, containment)
-- ♿ Full accessibility support (reduced motion, high contrast)
-- 🎭 Enhanced animations with better timing functions
-- 📐 Systematic spacing scale
-- 🔧 Extensive customization via CSS variables
-
-### Visual Enhancements:
-- Gradient accent bars on active tabs
-- Ripple effects on button clicks
-- Console messages slide in with animations
-- Glow effects on errors/warnings
-- Improved hover states throughout
-- Animated wave goodbye on close button
-- Glassmorphism effects on selected elements
 
 ---
 
@@ -324,18 +286,5 @@ If using Fira Code or similar fonts with ligatures, they'll automatically work i
 
 ### Pro Tip #3: Screenshot Your Setup
 Use Firefox's screenshot tool (`Shift+F2`, then `screenshot --fullpage`) to capture your customized DevTools.
-
-### Pro Tip #4: Backup Your Config
-Keep a copy of your `userChrome.css` in cloud storage - you'll thank yourself when setting up a new machine.
-
----
-
-**Q1**: Would you like examples of how to create custom color schemes based on popular design systems (Nord, Dracula, Solarized)?
-
-**Q2**: Should I add more granular controls for specific DevTools panels (like specialized Console or Network Monitor styling)?
-
-**Q3**: Are there any specific UI patterns from other developer tools (VS Code, Chrome DevTools, WebStorm) you'd like incorporated?
-
----
 
 **Enjoy your enhanced Firefox DevTools!** 🚀

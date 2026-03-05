@@ -4,37 +4,25 @@
    Pair with: @import url('./themes/theme-cyberpunk2077.css');
    ═══════════════════════════════════════════════════════════════ */
 
-/* ━━━ 2077 Palette ━━━ */
 :root {
   --cp-bg: #030d22;
-  /* Deep Navy */
   --cp-surface: #0b162d;
-  /* Elevated Surface */
   --cp-selection: rgba(250, 13, 234, 0.25);
-  /* Progress bar pink */
 
   --cp-yellow: #ffd400;
-  /* Numbers / Attributes */
   --cp-cyan: #0ef3ff;
-  /* Strings / Storage */
   --cp-hotpink: #ff2e97;
-  /* Tags / Links / JSON Keys */
   --cp-magenta: #ff2cf1;
-  /* Keywords */
   --cp-blue: #39c0ff;
-  /* Functions / Constants */
   --cp-deepblue: #0098df;
-  /* Comments */
 
   --cp-fg: #fdfeff;
   --cp-fg-dim: #8a9bb8;
 
-  /* ━━━ Console Glows ━━━ */
   --console-error-glow: 0 0 15px rgba(255, 46, 151, 0.4);
   --console-warning-glow: 0 0 15px rgba(255, 212, 0, 0.3);
 }
 
-/* ━━━ DARK MODE ━━━ */
 :root.theme-dark {
   --theme-tab-toolbar-background: var(--cp-surface) !important;
   --theme-toolbar-background: var(--cp-surface) !important;
@@ -84,12 +72,10 @@
 
   /* ━━━ Network Status Codes ━━━ */
   --status-code-color-2xx: #00ff9d !important;
-  /* Cyberpunk Green */
   --status-code-color-4xx: var(--cp-yellow) !important;
   --status-code-color-5xx: var(--cp-hotpink) !important;
 }
 
-/* ━━━ LIGHT MODE FALLBACK ━━━ */
 :root.theme-light {
   --theme-body-background: #f0f2f5 !important;
   --theme-body-color: #030d22 !important;
