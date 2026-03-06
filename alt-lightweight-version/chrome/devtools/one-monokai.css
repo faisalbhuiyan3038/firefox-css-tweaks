@@ -1,0 +1,96 @@
+/*
+ * Variables for devtools are available at: https://developer.mozilla.org/en-US/docs/Tools/DevToolsColors
+ */
+
+:root.theme-dark {
+   /*
+     * Chrome colors
+     */
+   --theme-tab-toolbar-background: #252c33 !important;
+   --theme-toolbar-background: #343c45 !important;
+   --theme-selection-background: #5c6679 !important;
+   --theme-selection-color: #f5f7fa !important;
+   --theme-splitter-color: #000000 !important;
+   --theme-comment: #5c6773 !important;
+
+   /*
+     * Content Colors
+     */
+   --theme-body-background: #2d323b !important;
+   --theme-sidebar-background: #23282e !important;
+   --theme-contrast-background: #b28025 !important;
+
+   /*
+     * Text Colors
+     */
+   --theme-body-color: #bcd3e7 !important;
+   --theme-body-color-alt: #d7dde6 !important;
+   --theme-content-color1: #a1c983 !important;
+   --theme-content-color2: #b6cbdf !important;
+   --theme-content-color3: #bccfe0 !important;
+
+   /*
+     * Highlight Colors
+     */
+   --theme-highlight-blue: #e47780 !important;
+   --theme-highlight-purple: #e8c786 !important;
+   --theme-highlight-pink: #df80ff !important;
+   --theme-highlight-red: #a1c983 !important;
+   --theme-highlight-orange: #d96629 !important;
+   --theme-highlight-lightorange: #d99b28 !important;
+   --theme-highlight-green: #b3bed3 !important;
+   --theme-highlight-bluegrey: #e8c786 !important;
+   --theme-highlight-yellow: #ffffb4 !important;
+
+   /* ━━━ Network Status Codes ━━━ */
+   --status-code-color-1xx: #5C6773 !important;
+   --status-code-color-2xx: #A1C983 !important;
+   --status-code-color-4xx: #D96629 !important;
+   --status-code-color-5xx: #E47780 !important;
+}
+
+:root.theme-light {
+   /*
+     * Chrome colors
+     */
+   --theme-tab-toolbar-background: #EBEDF0 !important;
+   --theme-toolbar-background: #F0F2F5 !important;
+   --theme-selection-background: rgba(3, 102, 214, 0.1) !important;
+   --theme-selection-color: #23282E !important;
+   --theme-splitter-color: rgba(0, 0, 0, 0.1) !important;
+   --theme-comment: #6A737D !important;
+
+   /*
+     * Content Colors
+     */
+   --theme-body-background: #FAFBFC !important;
+   --theme-sidebar-background: #F6F8FA !important;
+   /* --theme-contrast-background:; */
+
+   /*
+     * Text Colors
+     */
+   --theme-body-color: #24292E !important;
+   /* --theme-body-color-alt: ;
+   --theme-content-color1: ;
+   --theme-content-color2: ;
+   --theme-content-color3: ; */
+
+   /*
+     * Highlight Colors
+     */
+   --theme-highlight-blue: #D73A49 !important;
+   --theme-highlight-purple: #9e6f11 !important;
+   --theme-highlight-pink: #6F42C1 !important;
+   --theme-highlight-red: #22863A !important;
+   /* --theme-highlight-orange: ;
+   --theme-highlight-lightorange: ;
+   --theme-highlight-green: ;
+   --theme-highlight-bluegrey: ;
+   --theme-highlight-yellow: ; */
+
+   /* ━━━ Network Status Codes ━━━ */
+   --status-code-color-2xx: #22863A !important;
+   --status-code-color-4xx: #E36209 !important;
+   --status-code-color-5xx: #D73A49 !important;
+}

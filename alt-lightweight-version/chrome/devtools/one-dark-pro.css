@@ -1,0 +1,61 @@
+/*
+ * Variables for devtools are available at: https://developer.mozilla.org/en-US/docs/Tools/DevToolsColors
+ */
+
+:root.theme-dark {
+  /*
+     * Chrome colors
+     */
+  --theme-tab-toolbar-background: #21252b !important;
+  --theme-toolbar-background: #282c34 !important;
+  --theme-selection-background: #67769660 !important;
+  --theme-selection-color: #ffffff !important;
+  --theme-splitter-color: #3e4452 !important;
+  --theme-comment: #7f848e !important;
+
+  /*
+     * Content Colors
+     */
+  --theme-sidebar-background: #21252b !important;
+  --theme-body-background: #282c34 !important;
+  /* --theme-contrast-background: #b28025 !important; */
+
+  /*
+     * Text Colors
+     */
+  --theme-body-color: #abb2bf !important;
+  --theme-body-color-alt: #828997 !important;
+  --theme-content-color1: #61afef !important;
+  --theme-content-color2: #abb2bf !important;
+  --theme-content-color3: #7f848e !important;
+
+  /*
+     * Highlight Colors
+     */
+  --theme-highlight-blue: #e06c75 !important;
+  --theme-highlight-purple: #56b6c2 !important;
+  --theme-highlight-pink: #d19a66 !important;
+  --theme-highlight-red: #98c379 !important;
+  --theme-highlight-orange: #c678dd !important;
+  --theme-highlight-lightorange: #e5c07b !important;
+  --theme-highlight-green: #7f848e !important;
+  --theme-highlight-bluegrey: #d19a66 !important;
+  --theme-highlight-yellow: #c24038 !important;
+
+  /* ━━━ Network Status Codes ━━━ */
+  --status-code-color-1xx: #56b6c2 !important;
+  --status-code-color-2xx: #98c379 !important;
+  --status-code-color-4xx: #d19a66 !important;
+  --status-code-color-5xx: #e06c75 !important;
+}
+
+:root.theme-light {
+  /*
+     * Chrome colors
+     */
+  --theme-tab-toolbar-background: #f3f3f3 !important;
+  --theme-toolbar-background: #ffffff !important;
+  --theme-selection-background: rgba(3, 102, 214, 0.1) !important;
+  --theme-selection-color: #23282E !important;
+  --theme-splitter-color: rgba(0, 0, 0, 0.1) !important;
+}
