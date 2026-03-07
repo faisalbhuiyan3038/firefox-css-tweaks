@@ -1,2 +1,9 @@
-@import url('./devtools/themes/theme-one-monokai.css');
-@import url('./devtools/devtools-refined.css');
+@import url('./devtools/themes/theme-ayu.css') (-moz-pref("uc.devtools.theme.ayu.enabled"));
+@import url('./devtools/themes/theme-cyberpunk2077.css') (-moz-pref("uc.devtools.theme.cyberpunk2077.enabled"));
+@import url('./devtools/themes/theme-dracula.css') (-moz-pref("uc.devtools.theme.dracula.enabled"));
+@import url('./devtools/themes/theme-lws.css') (-moz-pref("uc.devtools.theme.lws.enabled"));
+@import url('./devtools/themes/theme-one-monokai.css') (-moz-pref("uc.devtools.theme.one-monokai.enabled"));
+@import url('./devtools/themes/theme-onedark-pro.css') (-moz-pref("uc.devtools.theme.onedark-pro.enabled"));
+@import url('./devtools/themes/theme-synthwave.css') (-moz-pref("uc.devtools.theme.synthwave.enabled"));
+
+@import url('./devtools/devtools-refined.css') (-moz-pref("uc.devtools.custom-animations.enabled"));
