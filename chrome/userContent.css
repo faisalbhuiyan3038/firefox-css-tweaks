@@ -5,5 +5,7 @@
 @import url('./devtools/themes/theme-one-monokai.css') (-moz-pref("uc.devtools.theme.one-monokai.enabled"));
 @import url('./devtools/themes/theme-onedark-pro.css') (-moz-pref("uc.devtools.theme.onedark-pro.enabled"));
 @import url('./devtools/themes/theme-synthwave.css') (-moz-pref("uc.devtools.theme.synthwave.enabled"));
+@import url('./devtools/alt-lightweight-themes/one-monokai.css') (-moz-pref("uc.devtools.theme.one-monokai-lightweight.enabled"));
+@import url('./devtools/alt-lightweight-themes/one-dark-pro.css') (-moz-pref("uc.devtools.theme.onedark-pro-lightweight.enabled"));
 
 @import url('./devtools/devtools-refined.css') (-moz-pref("uc.devtools.custom-animations.enabled"));
