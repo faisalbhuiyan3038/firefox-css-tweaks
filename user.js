@@ -17,7 +17,7 @@ user_pref("dom.script_loader.bytecode_cache.strategy", -1);
 user_pref("browser.cache.jsbc_compression_level", 4);
 
 //increased delay for stable rendering, default is 5
-user_pref("nglayout.initialpaint.delay", 250);
+user_pref("nglayout.initialpaint.delay", 125);
 
 //devtools themes
 user_pref("uc.devtools.theme.ayu.enabled", false);

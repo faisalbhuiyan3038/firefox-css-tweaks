@@ -1,0 +1,2 @@
+@import url('./modular-css/tabs/default_tabs_reduce_height.css') (-moz-pref("uc.tabs.reduce-height.enabled"));
+@import url('./modular-css/tabs/tabs_take_full_bar_width.css') (-moz-pref("uc.tabs.take-full-bar-width.enabled"));

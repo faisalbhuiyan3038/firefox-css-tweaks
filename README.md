@@ -1,3 +1,24 @@
+## Guide for installing user.js on Firefox android
+```js
+var locked = "ignore";
+var sticky = "ignore";
+var pref = function(pref, val, locked, sticky) {
+  try {
+    if (typeof val == "string") {
+      Services.prefs.setStringPref(pref, val);
+    } else if (typeof val == "number") {
+      Services.prefs.setIntPref(pref, val);
+    } else if (typeof val == "boolean") {
+      Services.prefs.setBoolPref(pref, val);
+    }
+  } catch (e) {
+    console.log("pref:" + pref + " val:" + val + " e:" + e);
+  }
+}
+
+// Paste the contents of user.js below:
+
+```
 # 🎨 Firefox DevTools Enhanced Theme
 
 A **modern, accessible, and highly customizable** CSS theme for Firefox Developer Tools that transforms the default interface into a polished, professional development environment.
