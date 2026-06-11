@@ -1,11 +1,15 @@
 #panel-sidebar-select-box {
-width: 9px !important;
-max-width: 9px !important;
-min-width: 9px !important;
-transition: all 0.1s;
+    width: 9px !important;
+    max-width: 9px !important;
+    min-width: 9px !important;
+    transition-property: all;
+    transition-duration: 0.1s;
+    transition-delay: 0s; /* No delay for collapse */
 }
+
 #panel-sidebar-select-box:hover {
-width: 42px !important;
-max-width: 42px !important;
-min-width: 42px !important;
+    width: 42px !important;
+    max-width: 42px !important;
+    min-width: 42px !important;
+    transition-delay: 0.4s; /* Delay only for expansion */
 }
