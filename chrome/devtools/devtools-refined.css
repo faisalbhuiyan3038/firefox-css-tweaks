@@ -7,8 +7,8 @@
 :root {
    /* ━━━ Typography ━━━ */
    /* Can use Monoid, Comic Code for leisure, but not using it since its bad for debugging */
-   --theme-font-family: 'Source Code Pro', 'JetBrains Mono', 'SF Mono', Menlo, Monaco, monospace;
-   --theme-monospace-font-family: 'Source Code Pro', 'JetBrains Mono', 'SF Mono', Menlo, Monaco, monospace;
+   /* --theme-font-family: 'Source Code Pro', 'JetBrains Mono', 'SF Mono', Menlo, Monaco, monospace; */
+   --theme-monospace-font-family: 'JetBrains Mono', 'SF Mono', Menlo, Monaco, monospace;
 
    /* ━━━ Animations & Transitions ━━━ */
    --theme-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -44,7 +44,7 @@
 
 .theme-body {
    background: var(--theme-body-background) !important;
-   font-family: var(--theme-font-family) !important;
+   /* font-family: var(--theme-font-family) !important; */
 }
 
 /* ━━━ Smooth Scrolling ━━━ */
@@ -63,7 +63,7 @@
    transition: background-color var(--theme-transition-duration) var(--theme-transition-timing),
       box-shadow var(--theme-transition-duration) var(--theme-transition-timing),
       padding var(--theme-transition-duration) var(--theme-transition-timing) !important;
-   font-family: var(--theme-font-family);
+   /* font-family: var(--theme-font-family); */
    letter-spacing: 0.2px;
 }
 
@@ -135,7 +135,7 @@
 .devtools-toolbarbutton {
    border-radius: 4px !important;
    transition: all var(--theme-transition-duration) var(--theme-transition-timing) !important;
-   font-family: var(--theme-font-family);
+   /* font-family: var(--theme-font-family); */
 }
 
 .devtools-tabbar-button:hover {
@@ -197,12 +197,31 @@
 .inspector-tabpanel {
    border-radius: var(--theme-border-radius) !important;
    transition: opacity var(--theme-transition-duration) var(--theme-transition-timing) !important;
-   font-family: var(--theme-font-family) !important;
+   /* font-family: var(--theme-font-family) !important; */
 }
 
 .CodeMirror-line {
    padding: 4px !important;
 }
+
+/* 1. Stop the parent container from forcing a solid color on everything */
+:root .tag-line[selected]:not(:has(.styleinspector-propertyeditor:focus)) :is(.editor, .editor.comment) {
+  color: var(--theme-text-color, inherit) !important;
+}
+
+/* 2. Force the individual syntax tokens back to their native theme variables */
+:root .tag-line[selected]:not(:has(.styleinspector-propertyeditor:focus)) .editor .tag {
+  color: var(--theme-highlight-blue) !important;
+}
+:root .tag-line[selected]:not(:has(.styleinspector-propertyeditor:focus)) .editor .attr-name {
+  color: var(--theme-highlight-red) !important;
+}
+:root .tag-line[selected]:not(:has(.styleinspector-propertyeditor:focus)) .editor .attr-value {
+  color: var(--theme-highlight-purple) !important;
+}
+/*:root .tag-line[selected]:not(:has(.styleinspector-propertyeditor:focus)) .editor .pseudo {
+  color: var(--theme-highlight-purple) !important;
+}*/
 
 /* ━━━ Tree Views ━━━ */
 .tree-row:hover,
@@ -225,7 +244,7 @@
 }
 
 .theme-selected {
-   background-color: var(--theme-selected-background) !important;
+    background-color: color-mix(in srgb, var(--theme-selection-background) 50%, transparent) !important;
 }
 
 .tree-node.focused {
@@ -390,7 +409,7 @@
 .devtools-tooltip {
    box-shadow: var(--theme-box-shadow) !important;
    animation: tooltipFade 0.2s var(--theme-transition-timing) !important;
-   font-family: var(--theme-font-family);
+   /* font-family: var(--theme-font-family); */
 }
 
 @keyframes tooltipFade {
